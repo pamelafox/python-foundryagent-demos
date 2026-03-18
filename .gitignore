@@ -16,6 +16,10 @@ infra/main.json
 .venv/
 venv/
 
+# Script output folders
+scripts/eval_output/
+scripts/red_team_output/
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 

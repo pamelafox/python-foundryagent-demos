@@ -1,44 +1,114 @@
-# [MVP Summit 2026](https://mvp.microsoft.com)
-
-## LAB006: Build Agentic Knowledge Bases: Next-Level RAG with Azure AI Search
-
-### Session Description
-
-In this hands-on lab, you'll build an Azure AI Search Knowledge Base powered by agentic RAG and extend it with Model Context Protocol (MCP) knowledge sources. You'll connect the Knowledge Base to both indexed enterprise content and live MCP servers, enabling smart, tool-driven source selection across multiple systems. By the end, you'll have a working Agentic Knowledge Base that itself can be consumed as an MCP endpoint—so agents and developer tools can retrieve grounded answers over enterprise data through standard MCP connections.
-
-### Lab Notebooks
-
-| # | Notebook | Description |
-|---|----------|-------------|
-| 1 | `part1-multiple-knowledge-sources.ipynb` | Build a multi-source knowledge base with indexed HR and health documents |
-| 2 | `part2-kb-as-mcp-endpoint.ipynb` | Consume the knowledge base as an MCP endpoint from GitHub Copilot CLI |
-| 3 | `part3-mcp-unauthenticated.ipynb` | Add a non-authenticated MCP source (Microsoft Learn) |
-| 4 | `part4-mcp-authenticated.ipynb` | Add an authenticated MCP source (GitHub) with Bearer token |
-| 5 | `part5-foundry-agent.ipynb` | Connect the knowledge base to a Microsoft Foundry Agent |
-
-### Getting Started
-
-See [infra/deploy-yourself/README.md](infra/deploy-yourself/README.md) for self-deployment instructions, or follow the guided lab instructions in the `lab/` folder.
+# Python Foundry Agent SDK Demos
 
 
-## Contributing
 
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit [Contributor License Agreements](https://cla.opensource.microsoft.com).
+## Prerequisites
 
-When you submit a pull request, a CLA bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
+- **Azure subscription** with sufficient permissions to create resources
+- **Azure Developer CLI (azd)** installed ([Install guide](https://learn.microsoft.com/azure/developer/azure-developer-cli/install-azd))
+- **Azure CLI** installed and configured ([Install guide](https://learn.microsoft.com/cli/azure/install-azure-cli))
+- **Python 3.10+** installed
+- **Git** (to clone this repository)
+- **VS Code** or **GitHub Codespaces** with Jupyter extension (recommended)
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+### Required Azure Permissions
 
-## Trademarks
+You'll need permissions to:
 
-This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft
-trademarks or logos is subject to and must follow
-[Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/legal/intellectualproperty/trademarks/usage/general).
-Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
-Any use of third-party trademarks or logos are subject to those third-party's policies.
+- Create resource groups
+- Deploy Bicep templates
+- Create and manage:
+  - Azure AI Search services
+  - Microsoft Foundry projects
+  - Azure OpenAI model deployments
+- Assign Azure RBAC roles
+
+## Quick Start
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/microsoft/mvp26-LAB006-build-agentic-knowledge-bases-next-level-rag-with-azure-ai-search.git
+cd mvp26-LAB006-build-agentic-knowledge-bases-next-level-rag-with-azure-ai-search
+```
+
+### 2. Create a Python virtual environment
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+### 3. Deploy with azd
+
+```bash
+azd auth login
+azd up
+```
+
+This will:
+
+- Provision all Azure resources
+- Fetch API keys and write a `.env` file
+- Create search indexes and upload sample data
+
+> **Note:** After setup, you'll need to manually add `GITHUB_TOKEN` to your `.env` file for Part 4 (authenticated MCP source).
+
+### 4. Start the Lab
+
+Open the [notebooks](../../notebooks) folder in VS Code and **start with `part1-multiple-knowledge-sources.ipynb`**.
+
+## Repository Structure
+
+### `scripts/`
+
+| File | Description |
+|------|-------------|
+| `create_foundry_agent.py` | Creates 20 Foundry agents with different enterprise personas (HR advisor, IT helpdesk, budget analyst, etc.) using the Azure AI Projects SDK. |
+| `create_kb_agent.py` | Creates a knowledge-base-grounded wellness advisor agent that uses Azure AI Search indexes (healthdocs/hrdocs) as its sole knowledge source via an MCP tool. |
+| `quality_eval.py` | Runs a quality evaluation against the KB-only wellness advisor agent, testing both in-scope and out-of-scope queries with evaluators for task adherence, intent resolution, and groundedness. |
+| `red_team_scan.py` | Runs an AI red teaming scan against the wellness advisor agent, testing for safety risks (self-harm, sexual content, violence, sensitive data leakage) using attack strategies and custom taxonomies. |
+| `create-indexes.py` | Standalone script to manually create Azure AI Search indexes and upload sample data (alternative to the `azd` post-provision hook). |
+| `locustfile.py` | Locust load test that sends random prompts to all created Foundry agents, useful for stress-testing agent throughput and latency. |
+| `requirements.txt` | Python dependencies for all scripts. |
+
+#### `scripts/eval_output/`
+
+Contains output from quality evaluations and the test query dataset (`test_queries.jsonl`).
+
+#### `scripts/red_team_output/`
+
+Contains output from red team scans for each agent.
+
+### `data/`
+
+| Folder | Description |
+|--------|-------------|
+| `ai-search-data/healthdocs/` | Source health-related documents for the AI Search index. |
+| `ai-search-data/hrdocs/` | Source HR documents (e.g., `Zava_Company_Overview.md`) for the AI Search index. |
+| `index-data/` | Exported JSONL data and index schema (`index.json`) used to create the Azure AI Search indexes. |
+
+### `infra/`
+
+| File | Description |
+|------|-------------|
+| `main.bicep` | Bicep template that provisions all Azure resources (AI Search, Foundry project, OpenAI deployments). |
+| `main.parameters.json` | Parameters for the Bicep deployment. |
+| `setup-knowledge.ps1` | PowerShell script to create search indexes and upload sample data. |
+| `hooks/` | `azd` lifecycle hooks (`postprovision.ps1`/`.sh`) that run after provisioning. |
+| `deploy-yourself/` | Standalone instructions for manually deploying outside of `azd`. |
+
+## Cleanup
+
+To delete all resources and avoid ongoing charges:
+
+```bash
+azd down
+```
+
+## Additional Resources
+
+- [Azure AI Search Documentation](https://learn.microsoft.com/azure/search/)
+- [Azure OpenAI Service Documentation](https://learn.microsoft.com/azure/ai-services/openai/)
+- [Azure Bicep Documentation](https://learn.microsoft.com/azure/azure-resource-manager/bicep/)
+- [Microsoft Foundry Community Discord](https://aka.ms/AIFoundryDiscord-Ignite25)
