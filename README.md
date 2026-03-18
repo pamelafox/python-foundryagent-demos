@@ -1,6 +1,6 @@
 # Python Foundry Agent SDK Demos
 
-
+This repository demonstrates how to build, evaluate, and load-test AI agents using the [Azure AI Foundry Agent SDK](https://learn.microsoft.com/azure/ai-services/agents/) and [Azure AI Search](https://learn.microsoft.com/azure/search/). It includes scripts to create prompt-based Foundry agents, ground them in enterprise knowledge bases via MCP tools, run quality evaluations, perform AI red teaming scans, and stress-test agent endpoints with Locust. Infrastructure is provisioned with `azd` and Bicep.
 
 ## Prerequisites
 
@@ -28,8 +28,8 @@ You'll need permissions to:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/microsoft/mvp26-LAB006-build-agentic-knowledge-bases-next-level-rag-with-azure-ai-search.git
-cd mvp26-LAB006-build-agentic-knowledge-bases-next-level-rag-with-azure-ai-search
+git clone https://github.com/pamelafox/python-foundryagent-demos.git
+cd python-foundryagent-demos
 ```
 
 ### 2. Create a Python virtual environment
@@ -52,11 +52,14 @@ This will:
 - Fetch API keys and write a `.env` file
 - Create search indexes and upload sample data
 
-> **Note:** After setup, you'll need to manually add `GITHUB_TOKEN` to your `.env` file for Part 4 (authenticated MCP source).
+### 4. Run the Scripts
 
-### 4. Start the Lab
+Install the Python dependencies and run any of the scripts in the `scripts/` folder:
 
-Open the [notebooks](../../notebooks) folder in VS Code and **start with `part1-multiple-knowledge-sources.ipynb`**.
+```bash
+pip install -r scripts/requirements.txt
+python scripts/create_foundry_agent.py
+```
 
 ## Repository Structure
 
@@ -94,9 +97,7 @@ Contains output from red team scans for each agent.
 |------|-------------|
 | `main.bicep` | Bicep template that provisions all Azure resources (AI Search, Foundry project, OpenAI deployments). |
 | `main.parameters.json` | Parameters for the Bicep deployment. |
-| `setup-knowledge.ps1` | PowerShell script to create search indexes and upload sample data. |
 | `hooks/` | `azd` lifecycle hooks (`postprovision.ps1`/`.sh`) that run after provisioning. |
-| `deploy-yourself/` | Standalone instructions for manually deploying outside of `azd`. |
 
 ## Cleanup
 
