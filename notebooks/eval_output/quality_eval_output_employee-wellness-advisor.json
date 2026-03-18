@@ -1,0 +1,1352 @@
+[
+  {
+    "id": "1",
+    "created_at": 1773785168,
+    "datasource_item": {
+      "query": "What are some tips for managing work-related stress?",
+      "sample.output_text": "Absolutely, managing work-related stress is essential for your well-being and productivity. Here are some practical tips:\n\n### 1. **Set Clear Boundaries**\n- **Define work hours:** Stick to defined work times to protect your personal life.\n- **Take regular breaks:** Short breaks throughout the day help refresh your mind.\n\n### 2. **Prioritize and Organize**\n- **Make to-do lists:** Prioritize tasks and break large projects into manageable steps.\n- **Learn to say no:** It's okay to decline extra work when you're already overloaded.\n\n### 3. **Adopt Healthy Lifestyle Choices**\n- **Exercise regularly:** Physical activity is a proven stress reducer.\n- **Eat balanced meals and stay hydrated:** Nutrition can impact energy and mood.\n- **Sleep well:** Aim for 7-9 hours of quality sleep each night.\n\n### 4. **Practice Relaxation Techniques**\n- **Deep breathing:** Slow, deep breaths help calm your mind.\n- **Mindfulness and meditation:** Apps like Headspace or Calm can guide quick, effective sessions.\n\n### 5. **Create an Ergonomic Workspace**\n- **Adjust chair and screen height:** Keep your back supported, feet flat, and monitor at eye level.\n- **Declutter:** An organized workspace fosters focus and calm.\n\n### 6. **Connect with Others**\n- **Talk with colleagues or friends:** Sharing concerns helps lessen stress.\n- **Seek support:** Don\u2019t hesitate to reach out if you\u2019re feeling overwhelmed.\n\n### 7. **Leverage Employee Assistance Programs (EAP)**\n- Many organizations offer confidential counseling, stress management workshops, and wellness resources.\n- Utilize these for professional support.\n\n---\n\n**If stress feels overwhelming or persistent, please consult your healthcare provider or a mental health professional. Your well-being is important and support is available.**\n\nWould you like information about specific relaxation exercises or more details on Employee Assistance Programs?",
+      "response_id": "resp_f232c7efb48e12f40069b9cfbc087c819097a96a02652f1b88",
+      "agent_id": "employee-wellness-advisor:1",
+      "agent_name": "employee-wellness-advisor",
+      "agent_version": "1",
+      "conversation_id": "conv_f232c7efb48e12f400amceUHRH33PUPgjCLlxYCP6QQcKzRBlN",
+      "previous_response_id": null,
+      "sample.tool_calls": [],
+      "sample.tool_definitions": [],
+      "sample.output_items": [
+        {
+          "role": "system",
+          "content": "You are an employee wellness advisor. Provide guidance on work-life balance, stress management, ergonomic setups, and available employee assistance programs. Be supportive and always recommend professional resources for health concerns."
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "annotations": [],
+              "text": "Absolutely, managing work-related stress is essential for your well-being and productivity. Here are some practical tips:\n\n### 1. **Set Clear Boundaries**\n- **Define work hours:** Stick to defined work times to protect your personal life.\n- **Take regular breaks:** Short breaks throughout the day help refresh your mind.\n\n### 2. **Prioritize and Organize**\n- **Make to-do lists:** Prioritize tasks and break large projects into manageable steps.\n- **Learn to say no:** It's okay to decline extra work when you're already overloaded.\n\n### 3. **Adopt Healthy Lifestyle Choices**\n- **Exercise regularly:** Physical activity is a proven stress reducer.\n- **Eat balanced meals and stay hydrated:** Nutrition can impact energy and mood.\n- **Sleep well:** Aim for 7-9 hours of quality sleep each night.\n\n### 4. **Practice Relaxation Techniques**\n- **Deep breathing:** Slow, deep breaths help calm your mind.\n- **Mindfulness and meditation:** Apps like Headspace or Calm can guide quick, effective sessions.\n\n### 5. **Create an Ergonomic Workspace**\n- **Adjust chair and screen height:** Keep your back supported, feet flat, and monitor at eye level.\n- **Declutter:** An organized workspace fosters focus and calm.\n\n### 6. **Connect with Others**\n- **Talk with colleagues or friends:** Sharing concerns helps lessen stress.\n- **Seek support:** Don\u2019t hesitate to reach out if you\u2019re feeling overwhelmed.\n\n### 7. **Leverage Employee Assistance Programs (EAP)**\n- Many organizations offer confidential counseling, stress management workshops, and wellness resources.\n- Utilize these for professional support.\n\n---\n\n**If stress feels overwhelming or persistent, please consult your healthcare provider or a mental health professional. Your well-being is important and support is available.**\n\nWould you like information about specific relaxation exercises or more details on Employee Assistance Programs?",
+              "type": "output_text",
+              "logprobs": []
+            }
+          ]
+        }
+      ],
+      "sample.output_status": {
+        "status": "success",
+        "message": ""
+      },
+      "sample.output_status.status": "success",
+      "sample.output_status.message": ""
+    },
+    "datasource_item_id": 0,
+    "eval_id": "eval_0191d3c57a8a4d00922f73ccda245bc0",
+    "object": "eval.run.output_item",
+    "results": [
+      {
+        "name": "Task Adherence",
+        "passed": true,
+        "score": 1.0,
+        "sample": {
+          "usage": {
+            "prompt_tokens": 1699,
+            "completion_tokens": 104,
+            "total_tokens": 1803
+          },
+          "finish_reason": "stop",
+          "model": "gpt-4.1-2025-04-14",
+          "input": [
+            {
+              "role": "user",
+              "content": "{\"system_message\": \"\", \"query\": \"What are some tips for managing work-related stress?\", \"response\": \"Absolutely, managing work-related stress is essential for your well-being and productivity. Here are some practical tips:\\n\\n### 1. **Set Clear Boundaries**\\n- **Define work hours:** Stick to defined work times to protect your personal life.\\n- **Take regular breaks:** Short breaks throughout the day help refresh your mind.\\n\\n### 2. **Prioritize and Organize**\\n- **Make to-do lists:** Prioritize tasks and break large projects into manageable steps.\\n- **Learn to say no:** It's okay to decline extra work when you're already overloaded.\\n\\n### 3. **Adopt Healthy Lifestyle Choices**\\n- **Exercise regularly:** Physical activity is a proven stress reducer.\\n- **Eat balanced meals and stay hydrated:** Nutrition can impact energy and mood.\\n- **Sleep well:** Aim for 7-9 hours of quality sleep each night.\\n\\n### 4. **Practice Relaxation Techniques**\\n- **Deep breathing:** Slow, deep breaths help calm your mind.\\n- **Mindfulness and meditation:** Apps like Headspace or Calm can guide quick, effective sessions.\\n\\n### 5. **Create an Ergonomic Workspace**\\n- **Adjust chair and screen height:** Keep your back supported, feet flat, and monitor at eye level.\\n- **Declutter:** An organized workspace fosters focus and calm.\\n\\n### 6. **Connect with Others**\\n- **Talk with colleagues or friends:** Sharing concerns helps lessen stress.\\n- **Seek support:** Don\\u2019t hesitate to reach out if you\\u2019re feeling overwhelmed.\\n\\n### 7. **Leverage Employee Assistance Programs (EAP)**\\n- Many organizations offer confidential counseling, stress management workshops, and wellness resources.\\n- Utilize these for professional support.\\n\\n---\\n\\n**If stress feels overwhelming or persistent, please consult your healthcare provider or a mental health professional. Your well-being is important and support is available.**\\n\\nWould you like information about specific relaxation exercises or more details on Employee Assistance Programs?\", \"tool_calls\": \"\"}"
+            }
+          ],
+          "output": [
+            {
+              "role": "assistant",
+              "content": "{\n  \"reasoning\": \"The assistant provided a comprehensive list of actionable tips for managing work-related stress, directly answering the user's request and remaining within scope. There is no evidence of harmful, private, or unauthorized content, and no strict formatting or workflow requirements were given. No unverifiable claims or improper tool use are present, as the response is self-contained and does not rely on external actions. All requirements and user intent are satisfied, so there are no material failures.\",\n  \"flagged\": false\n}"
+            }
+          ]
+        },
+        "type": "azure_ai_evaluator",
+        "metric": "task_adherence",
+        "label": "pass",
+        "reason": "The assistant provided a comprehensive list of actionable tips for managing work-related stress, directly answering the user's request and remaining within scope. There is no evidence of harmful, private, or unauthorized content, and no strict formatting or workflow requirements were given. No unverifiable claims or improper tool use are present, as the response is self-contained and does not rely on external actions. All requirements and user intent are satisfied, so there are no material failures.",
+        "threshold": 0
+      },
+      {
+        "name": "Intent Resolution",
+        "passed": true,
+        "score": 5.0,
+        "sample": {
+          "usage": {
+            "prompt_tokens": 2271,
+            "completion_tokens": 75,
+            "total_tokens": 2346
+          },
+          "finish_reason": "stop",
+          "model": "gpt-4.1-2025-04-14",
+          "input": [
+            {
+              "role": "user",
+              "content": "{\"query\": \"What are some tips for managing work-related stress?\", \"response\": \"Absolutely, managing work-related stress is essential for your well-being and productivity. Here are some practical tips:\\n\\n### 1. **Set Clear Boundaries**\\n- **Define work hours:** Stick to defined work times to protect your personal life.\\n- **Take regular breaks:** Short breaks throughout the day help refresh your mind.\\n\\n### 2. **Prioritize and Organize**\\n- **Make to-do lists:** Prioritize tasks and break large projects into manageable steps.\\n- **Learn to say no:** It's okay to decline extra work when you're already overloaded.\\n\\n### 3. **Adopt Healthy Lifestyle Choices**\\n- **Exercise regularly:** Physical activity is a proven stress reducer.\\n- **Eat balanced meals and stay hydrated:** Nutrition can impact energy and mood.\\n- **Sleep well:** Aim for 7-9 hours of quality sleep each night.\\n\\n### 4. **Practice Relaxation Techniques**\\n- **Deep breathing:** Slow, deep breaths help calm your mind.\\n- **Mindfulness and meditation:** Apps like Headspace or Calm can guide quick, effective sessions.\\n\\n### 5. **Create an Ergonomic Workspace**\\n- **Adjust chair and screen height:** Keep your back supported, feet flat, and monitor at eye level.\\n- **Declutter:** An organized workspace fosters focus and calm.\\n\\n### 6. **Connect with Others**\\n- **Talk with colleagues or friends:** Sharing concerns helps lessen stress.\\n- **Seek support:** Don\\u2019t hesitate to reach out if you\\u2019re feeling overwhelmed.\\n\\n### 7. **Leverage Employee Assistance Programs (EAP)**\\n- Many organizations offer confidential counseling, stress management workshops, and wellness resources.\\n- Utilize these for professional support.\\n\\n---\\n\\n**If stress feels overwhelming or persistent, please consult your healthcare provider or a mental health professional. Your well-being is important and support is available.**\\n\\nWould you like information about specific relaxation exercises or more details on Employee Assistance Programs?\", \"tool_definitions\": null}"
+            }
+          ],
+          "output": [
+            {
+              "role": "assistant",
+              "content": "{\n  \"explanation\": \"The user asked for tips on managing work-related stress. The agent provided a thorough, well-organized list of practical strategies, covering boundaries, organization, lifestyle, relaxation, workspace, social support, and professional resources. The response is comprehensive, relevant, and actionable, fully resolving the user's intent.\",\n  \"score\": 5\n}"
+            }
+          ]
+        },
+        "type": "azure_ai_evaluator",
+        "metric": "intent_resolution",
+        "label": "pass",
+        "reason": "The user asked for tips on managing work-related stress. The agent provided a thorough, well-organized list of practical strategies, covering boundaries, organization, lifestyle, relaxation, workspace, social support, and professional resources. The response is comprehensive, relevant, and actionable, fully resolving the user's intent.",
+        "threshold": 3
+      }
+    ],
+    "run_id": "evalrun_c4999a4012f146c48d09bbbe8cee1b5e",
+    "sample": {
+      "error": null,
+      "finish_reason": "stop",
+      "input": [
+        {
+          "content": "{\"query\": \"What are some tips for managing work-related stress?\", \"response\": \"Absolutely, managing work-related stress is essential for your well-being and productivity. Here are some practical tips:\\n\\n### 1. **Set Clear Boundaries**\\n- **Define work hours:** Stick to defined work times to protect your personal life.\\n- **Take regular breaks:** Short breaks throughout the day help refresh your mind.\\n\\n### 2. **Prioritize and Organize**\\n- **Make to-do lists:** Prioritize tasks and break large projects into manageable steps.\\n- **Learn to say no:** It's okay to decline extra work when you're already overloaded.\\n\\n### 3. **Adopt Healthy Lifestyle Choices**\\n- **Exercise regularly:** Physical activity is a proven stress reducer.\\n- **Eat balanced meals and stay hydrated:** Nutrition can impact energy and mood.\\n- **Sleep well:** Aim for 7-9 hours of quality sleep each night.\\n\\n### 4. **Practice Relaxation Techniques**\\n- **Deep breathing:** Slow, deep breaths help calm your mind.\\n- **Mindfulness and meditation:** Apps like Headspace or Calm can guide quick, effective sessions.\\n\\n### 5. **Create an Ergonomic Workspace**\\n- **Adjust chair and screen height:** Keep your back supported, feet flat, and monitor at eye level.\\n- **Declutter:** An organized workspace fosters focus and calm.\\n\\n### 6. **Connect with Others**\\n- **Talk with colleagues or friends:** Sharing concerns helps lessen stress.\\n- **Seek support:** Don\\u2019t hesitate to reach out if you\\u2019re feeling overwhelmed.\\n\\n### 7. **Leverage Employee Assistance Programs (EAP)**\\n- Many organizations offer confidential counseling, stress management workshops, and wellness resources.\\n- Utilize these for professional support.\\n\\n---\\n\\n**If stress feels overwhelming or persistent, please consult your healthcare provider or a mental health professional. Your well-being is important and support is available.**\\n\\nWould you like information about specific relaxation exercises or more details on Employee Assistance Programs?\", \"tool_definitions\": null}",
+          "role": "user"
+        }
+      ],
+      "max_completion_tokens": null,
+      "model": "gpt-4.1-2025-04-14",
+      "output": [
+        {
+          "content": "{\n  \"explanation\": \"The user asked for tips on managing work-related stress. The agent provided a thorough, well-organized list of practical strategies, covering boundaries, organization, lifestyle, relaxation, workspace, social support, and professional resources. The response is comprehensive, relevant, and actionable, fully resolving the user's intent.\",\n  \"score\": 5\n}",
+          "role": "assistant"
+        }
+      ],
+      "seed": null,
+      "temperature": null,
+      "top_p": null,
+      "usage": {
+        "cached_tokens": null,
+        "completion_tokens": 75,
+        "prompt_tokens": 2271,
+        "total_tokens": 2346
+      }
+    },
+    "status": "completed"
+  },
+  {
+    "id": "2",
+    "created_at": 1773785168,
+    "datasource_item": {
+      "query": "How can I improve my ergonomic setup while working from home?",
+      "sample.output_text": "Improving your ergonomic setup at home is a great way to boost comfort, reduce strain, and enhance productivity. Here are some practical steps you can take:\n\n**1. Chair and Posture:**  \n- Use a chair that supports your lower back. If your chair doesn\u2019t have lumbar support, add a small pillow or rolled-up towel.\n- Sit so your feet are flat on the floor, thighs parallel to the ground, and knees at a 90-degree angle.\n- Keep your shoulders relaxed and elbows close to your body at about a 90- to 120-degree angle.\n\n**2. Desk and Monitor:**  \n- Position your monitor directly in front of you, about an arm\u2019s length away.\n- The top of your screen should be at or slightly below eye level.\n- If you use a laptop, consider a laptop stand or stack books to raise the screen, and use an external keyboard and mouse for better hand positioning.\n\n**3. Keyboard and Mouse:**  \n- Place your keyboard and mouse at the same height, ideally just above your lap.\n- Keep your wrists straight and hands at or below elbow level.\n\n**4. Lighting:**  \n- Ensure your workspace is well-lit to reduce eye strain. Natural light is great, but avoid glare on the screen.\n- Position task lighting to the side of the monitor, not directly behind or in front.\n\n**5. Movement and Breaks:**  \n- Take regular breaks: every 30\u201360 minutes, stand up, stretch, or walk around.\n- Consider using reminders or apps to prompt movement.\n\n**6. Workspace Organization:**  \n- Keep frequently used items within easy reach to avoid excessive stretching.\n- Declutter your work area to maintain focus and reduce distractions.\n\n**If You Experience Discomfort:**  \nPersistent pain or discomfort should be brought to the attention of a healthcare professional. Sometimes small adjustments can have a big impact, but ongoing issues should always be evaluated.\n\n**Additional Resources:**  \nMost organizations have Employee Assistance Programs (EAPs) or health and safety resources. If you\u2019d like, I can direct you to any specific guides or services your employer offers.\n\nIf you have any specific health conditions, it\u2019s always a good idea to consult with an occupational health specialist or physical therapist for individualized support.",
+      "response_id": "resp_d361f291eb93697d0069b9cfcaf73c8190a037e084cad9296b",
+      "agent_id": "employee-wellness-advisor:1",
+      "agent_name": "employee-wellness-advisor",
+      "agent_version": "1",
+      "conversation_id": "conv_d361f291eb93697d00xwUykI7aOWAQcci81LvLkSrWiRQRvbAC",
+      "previous_response_id": null,
+      "sample.tool_calls": [],
+      "sample.tool_definitions": [],
+      "sample.output_items": [
+        {
+          "role": "system",
+          "content": "You are an employee wellness advisor. Provide guidance on work-life balance, stress management, ergonomic setups, and available employee assistance programs. Be supportive and always recommend professional resources for health concerns."
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "annotations": [],
+              "text": "Improving your ergonomic setup at home is a great way to boost comfort, reduce strain, and enhance productivity. Here are some practical steps you can take:\n\n**1. Chair and Posture:**  \n- Use a chair that supports your lower back. If your chair doesn\u2019t have lumbar support, add a small pillow or rolled-up towel.\n- Sit so your feet are flat on the floor, thighs parallel to the ground, and knees at a 90-degree angle.\n- Keep your shoulders relaxed and elbows close to your body at about a 90- to 120-degree angle.\n\n**2. Desk and Monitor:**  \n- Position your monitor directly in front of you, about an arm\u2019s length away.\n- The top of your screen should be at or slightly below eye level.\n- If you use a laptop, consider a laptop stand or stack books to raise the screen, and use an external keyboard and mouse for better hand positioning.\n\n**3. Keyboard and Mouse:**  \n- Place your keyboard and mouse at the same height, ideally just above your lap.\n- Keep your wrists straight and hands at or below elbow level.\n\n**4. Lighting:**  \n- Ensure your workspace is well-lit to reduce eye strain. Natural light is great, but avoid glare on the screen.\n- Position task lighting to the side of the monitor, not directly behind or in front.\n\n**5. Movement and Breaks:**  \n- Take regular breaks: every 30\u201360 minutes, stand up, stretch, or walk around.\n- Consider using reminders or apps to prompt movement.\n\n**6. Workspace Organization:**  \n- Keep frequently used items within easy reach to avoid excessive stretching.\n- Declutter your work area to maintain focus and reduce distractions.\n\n**If You Experience Discomfort:**  \nPersistent pain or discomfort should be brought to the attention of a healthcare professional. Sometimes small adjustments can have a big impact, but ongoing issues should always be evaluated.\n\n**Additional Resources:**  \nMost organizations have Employee Assistance Programs (EAPs) or health and safety resources. If you\u2019d like, I can direct you to any specific guides or services your employer offers.\n\nIf you have any specific health conditions, it\u2019s always a good idea to consult with an occupational health specialist or physical therapist for individualized support.",
+              "type": "output_text",
+              "logprobs": []
+            }
+          ]
+        }
+      ],
+      "sample.output_status": {
+        "status": "success",
+        "message": ""
+      },
+      "sample.output_status.status": "success",
+      "sample.output_status.message": ""
+    },
+    "datasource_item_id": 1,
+    "eval_id": "eval_0191d3c57a8a4d00922f73ccda245bc0",
+    "object": "eval.run.output_item",
+    "results": [
+      {
+        "name": "Task Adherence",
+        "passed": true,
+        "score": 1.0,
+        "sample": {
+          "usage": {
+            "prompt_tokens": 1773,
+            "completion_tokens": 111,
+            "total_tokens": 1884
+          },
+          "finish_reason": "stop",
+          "model": "gpt-4.1-2025-04-14",
+          "input": [
+            {
+              "role": "user",
+              "content": "{\"system_message\": \"\", \"query\": \"How can I improve my ergonomic setup while working from home?\", \"response\": \"Improving your ergonomic setup at home is a great way to boost comfort, reduce strain, and enhance productivity. Here are some practical steps you can take:\\n\\n**1. Chair and Posture:**  \\n- Use a chair that supports your lower back. If your chair doesn\\u2019t have lumbar support, add a small pillow or rolled-up towel.\\n- Sit so your feet are flat on the floor, thighs parallel to the ground, and knees at a 90-degree angle.\\n- Keep your shoulders relaxed and elbows close to your body at about a 90- to 120-degree angle.\\n\\n**2. Desk and Monitor:**  \\n- Position your monitor directly in front of you, about an arm\\u2019s length away.\\n- The top of your screen should be at or slightly below eye level.\\n- If you use a laptop, consider a laptop stand or stack books to raise the screen, and use an external keyboard and mouse for better hand positioning.\\n\\n**3. Keyboard and Mouse:**  \\n- Place your keyboard and mouse at the same height, ideally just above your lap.\\n- Keep your wrists straight and hands at or below elbow level.\\n\\n**4. Lighting:**  \\n- Ensure your workspace is well-lit to reduce eye strain. Natural light is great, but avoid glare on the screen.\\n- Position task lighting to the side of the monitor, not directly behind or in front.\\n\\n**5. Movement and Breaks:**  \\n- Take regular breaks: every 30\\u201360 minutes, stand up, stretch, or walk around.\\n- Consider using reminders or apps to prompt movement.\\n\\n**6. Workspace Organization:**  \\n- Keep frequently used items within easy reach to avoid excessive stretching.\\n- Declutter your work area to maintain focus and reduce distractions.\\n\\n**If You Experience Discomfort:**  \\nPersistent pain or discomfort should be brought to the attention of a healthcare professional. Sometimes small adjustments can have a big impact, but ongoing issues should always be evaluated.\\n\\n**Additional Resources:**  \\nMost organizations have Employee Assistance Programs (EAPs) or health and safety resources. If you\\u2019d like, I can direct you to any specific guides or services your employer offers.\\n\\nIf you have any specific health conditions, it\\u2019s always a good idea to consult with an occupational health specialist or physical therapist for individualized support.\", \"tool_calls\": \"\"}"
+            }
+          ],
+          "output": [
+            {
+              "role": "assistant",
+              "content": "{\n  \"reasoning\": \"The assistant provided a comprehensive and practical list of recommendations to improve ergonomic setup at home, covering posture, equipment placement, lighting, movement, workspace organization, and indications about professional consultation for discomfort. There are no claims about external actions or unverifiable data, no procedural or sequencing requirements, and there are no explicit rule or presentation constraints. There is no evidence of harmful, unsafe, or irrelevant content, nor privacy violations. All instructions are aligned with the user's request and fully usable.\",\n  \"flagged\": false\n}"
+            }
+          ]
+        },
+        "type": "azure_ai_evaluator",
+        "metric": "task_adherence",
+        "label": "pass",
+        "reason": "The assistant provided a comprehensive and practical list of recommendations to improve ergonomic setup at home, covering posture, equipment placement, lighting, movement, workspace organization, and indications about professional consultation for discomfort. There are no claims about external actions or unverifiable data, no procedural or sequencing requirements, and there are no explicit rule or presentation constraints. There is no evidence of harmful, unsafe, or irrelevant content, nor privacy violations. All instructions are aligned with the user's request and fully usable.",
+        "threshold": 0
+      },
+      {
+        "name": "Intent Resolution",
+        "passed": true,
+        "score": 5.0,
+        "sample": {
+          "usage": {
+            "prompt_tokens": 2345,
+            "completion_tokens": 66,
+            "total_tokens": 2411
+          },
+          "finish_reason": "stop",
+          "model": "gpt-4.1-2025-04-14",
+          "input": [
+            {
+              "role": "user",
+              "content": "{\"query\": \"How can I improve my ergonomic setup while working from home?\", \"response\": \"Improving your ergonomic setup at home is a great way to boost comfort, reduce strain, and enhance productivity. Here are some practical steps you can take:\\n\\n**1. Chair and Posture:**  \\n- Use a chair that supports your lower back. If your chair doesn\\u2019t have lumbar support, add a small pillow or rolled-up towel.\\n- Sit so your feet are flat on the floor, thighs parallel to the ground, and knees at a 90-degree angle.\\n- Keep your shoulders relaxed and elbows close to your body at about a 90- to 120-degree angle.\\n\\n**2. Desk and Monitor:**  \\n- Position your monitor directly in front of you, about an arm\\u2019s length away.\\n- The top of your screen should be at or slightly below eye level.\\n- If you use a laptop, consider a laptop stand or stack books to raise the screen, and use an external keyboard and mouse for better hand positioning.\\n\\n**3. Keyboard and Mouse:**  \\n- Place your keyboard and mouse at the same height, ideally just above your lap.\\n- Keep your wrists straight and hands at or below elbow level.\\n\\n**4. Lighting:**  \\n- Ensure your workspace is well-lit to reduce eye strain. Natural light is great, but avoid glare on the screen.\\n- Position task lighting to the side of the monitor, not directly behind or in front.\\n\\n**5. Movement and Breaks:**  \\n- Take regular breaks: every 30\\u201360 minutes, stand up, stretch, or walk around.\\n- Consider using reminders or apps to prompt movement.\\n\\n**6. Workspace Organization:**  \\n- Keep frequently used items within easy reach to avoid excessive stretching.\\n- Declutter your work area to maintain focus and reduce distractions.\\n\\n**If You Experience Discomfort:**  \\nPersistent pain or discomfort should be brought to the attention of a healthcare professional. Sometimes small adjustments can have a big impact, but ongoing issues should always be evaluated.\\n\\n**Additional Resources:**  \\nMost organizations have Employee Assistance Programs (EAPs) or health and safety resources. If you\\u2019d like, I can direct you to any specific guides or services your employer offers.\\n\\nIf you have any specific health conditions, it\\u2019s always a good idea to consult with an occupational health specialist or physical therapist for individualized support.\", \"tool_definitions\": null}"
+            }
+          ],
+          "output": [
+            {
+              "role": "assistant",
+              "content": "{\n  \"explanation\": \"The user wanted advice on improving their ergonomic setup while working from home. The agent provided a thorough, well-structured list of actionable tips covering posture, equipment, lighting, breaks, and additional resources, fully addressing the user's intent with no notable gaps.\",\n  \"score\": 5\n}"
+            }
+          ]
+        },
+        "type": "azure_ai_evaluator",
+        "metric": "intent_resolution",
+        "label": "pass",
+        "reason": "The user wanted advice on improving their ergonomic setup while working from home. The agent provided a thorough, well-structured list of actionable tips covering posture, equipment, lighting, breaks, and additional resources, fully addressing the user's intent with no notable gaps.",
+        "threshold": 3
+      }
+    ],
+    "run_id": "evalrun_c4999a4012f146c48d09bbbe8cee1b5e",
+    "sample": {
+      "error": null,
+      "finish_reason": "stop",
+      "input": [
+        {
+          "content": "{\"query\": \"How can I improve my ergonomic setup while working from home?\", \"response\": \"Improving your ergonomic setup at home is a great way to boost comfort, reduce strain, and enhance productivity. Here are some practical steps you can take:\\n\\n**1. Chair and Posture:**  \\n- Use a chair that supports your lower back. If your chair doesn\\u2019t have lumbar support, add a small pillow or rolled-up towel.\\n- Sit so your feet are flat on the floor, thighs parallel to the ground, and knees at a 90-degree angle.\\n- Keep your shoulders relaxed and elbows close to your body at about a 90- to 120-degree angle.\\n\\n**2. Desk and Monitor:**  \\n- Position your monitor directly in front of you, about an arm\\u2019s length away.\\n- The top of your screen should be at or slightly below eye level.\\n- If you use a laptop, consider a laptop stand or stack books to raise the screen, and use an external keyboard and mouse for better hand positioning.\\n\\n**3. Keyboard and Mouse:**  \\n- Place your keyboard and mouse at the same height, ideally just above your lap.\\n- Keep your wrists straight and hands at or below elbow level.\\n\\n**4. Lighting:**  \\n- Ensure your workspace is well-lit to reduce eye strain. Natural light is great, but avoid glare on the screen.\\n- Position task lighting to the side of the monitor, not directly behind or in front.\\n\\n**5. Movement and Breaks:**  \\n- Take regular breaks: every 30\\u201360 minutes, stand up, stretch, or walk around.\\n- Consider using reminders or apps to prompt movement.\\n\\n**6. Workspace Organization:**  \\n- Keep frequently used items within easy reach to avoid excessive stretching.\\n- Declutter your work area to maintain focus and reduce distractions.\\n\\n**If You Experience Discomfort:**  \\nPersistent pain or discomfort should be brought to the attention of a healthcare professional. Sometimes small adjustments can have a big impact, but ongoing issues should always be evaluated.\\n\\n**Additional Resources:**  \\nMost organizations have Employee Assistance Programs (EAPs) or health and safety resources. If you\\u2019d like, I can direct you to any specific guides or services your employer offers.\\n\\nIf you have any specific health conditions, it\\u2019s always a good idea to consult with an occupational health specialist or physical therapist for individualized support.\", \"tool_definitions\": null}",
+          "role": "user"
+        }
+      ],
+      "max_completion_tokens": null,
+      "model": "gpt-4.1-2025-04-14",
+      "output": [
+        {
+          "content": "{\n  \"explanation\": \"The user wanted advice on improving their ergonomic setup while working from home. The agent provided a thorough, well-structured list of actionable tips covering posture, equipment, lighting, breaks, and additional resources, fully addressing the user's intent with no notable gaps.\",\n  \"score\": 5\n}",
+          "role": "assistant"
+        }
+      ],
+      "seed": null,
+      "temperature": null,
+      "top_p": null,
+      "usage": {
+        "cached_tokens": null,
+        "completion_tokens": 66,
+        "prompt_tokens": 2345,
+        "total_tokens": 2411
+      }
+    },
+    "status": "completed"
+  },
+  {
+    "id": "3",
+    "created_at": 1773785168,
+    "datasource_item": {
+      "query": "What employee assistance programs are available?",
+      "sample.output_text": "Employee Assistance Programs (EAPs) are confidential workplace services designed to support employees\u2019 well-being, both personally and professionally. The services commonly included are:\n\n**1. Counseling Services:**  \n- Short-term counseling sessions (in-person, by phone, or online) for stress, anxiety, depression, relationship issues, and grief.\n\n**2. Work-Life Support:**  \n- Information and referral services for childcare, eldercare, legal matters, and financial planning.\n\n**3. Crisis Intervention:**  \n- Immediate support during critical incidents, such as workplace accidents or traumatic events.\n\n**4. Substance Abuse Assistance:**  \n- Support and referrals for those struggling with alcohol or drug concerns.\n\n**5. Managerial Consultation:**  \n- Guidance for managers on helping team members in distress or navigating challenging workplace situations.\n\n**6. Wellness Resources:**  \n- Workshops, webinars, and educational materials on work-life balance, stress management, and healthy living.\n\n**How to Access Your EAP:**\n- Typically, contact information (toll-free phone number, website, or app details) is available on your company intranet, employee handbook, or through HR.\n- All services provided by EAPs are confidential and usually free to employees and their immediate family members.\n\n**Supportive Reminder:**  \nIf you\u2019re experiencing ongoing stress, mental health concerns, or personal difficulties, it\u2019s always appropriate to reach out to your EAP or a qualified healthcare provider for professional support.\n\nWould you like more details specific to your organization\u2019s EAP offerings? If so, I can guide you on where to find that information!",
+      "response_id": "resp_77292a696917a82f0069b9cfd5cde081908af408871104f1c7",
+      "agent_id": "employee-wellness-advisor:1",
+      "agent_name": "employee-wellness-advisor",
+      "agent_version": "1",
+      "conversation_id": "conv_77292a696917a82f00VbRhllWAGdSUlGhB5RCCc3AWGHWDdIjn",
+      "previous_response_id": null,
+      "sample.tool_calls": [],
+      "sample.tool_definitions": [],
+      "sample.output_items": [
+        {
+          "role": "system",
+          "content": "You are an employee wellness advisor. Provide guidance on work-life balance, stress management, ergonomic setups, and available employee assistance programs. Be supportive and always recommend professional resources for health concerns."
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "annotations": [],
+              "text": "Employee Assistance Programs (EAPs) are confidential workplace services designed to support employees\u2019 well-being, both personally and professionally. The services commonly included are:\n\n**1. Counseling Services:**  \n- Short-term counseling sessions (in-person, by phone, or online) for stress, anxiety, depression, relationship issues, and grief.\n\n**2. Work-Life Support:**  \n- Information and referral services for childcare, eldercare, legal matters, and financial planning.\n\n**3. Crisis Intervention:**  \n- Immediate support during critical incidents, such as workplace accidents or traumatic events.\n\n**4. Substance Abuse Assistance:**  \n- Support and referrals for those struggling with alcohol or drug concerns.\n\n**5. Managerial Consultation:**  \n- Guidance for managers on helping team members in distress or navigating challenging workplace situations.\n\n**6. Wellness Resources:**  \n- Workshops, webinars, and educational materials on work-life balance, stress management, and healthy living.\n\n**How to Access Your EAP:**\n- Typically, contact information (toll-free phone number, website, or app details) is available on your company intranet, employee handbook, or through HR.\n- All services provided by EAPs are confidential and usually free to employees and their immediate family members.\n\n**Supportive Reminder:**  \nIf you\u2019re experiencing ongoing stress, mental health concerns, or personal difficulties, it\u2019s always appropriate to reach out to your EAP or a qualified healthcare provider for professional support.\n\nWould you like more details specific to your organization\u2019s EAP offerings? If so, I can guide you on where to find that information!",
+              "type": "output_text",
+              "logprobs": []
+            }
+          ]
+        }
+      ],
+      "sample.output_status": {
+        "status": "success",
+        "message": ""
+      },
+      "sample.output_status.status": "success",
+      "sample.output_status.message": ""
+    },
+    "datasource_item_id": 2,
+    "eval_id": "eval_0191d3c57a8a4d00922f73ccda245bc0",
+    "object": "eval.run.output_item",
+    "results": [
+      {
+        "name": "Task Adherence",
+        "passed": true,
+        "score": 1.0,
+        "sample": {
+          "usage": {
+            "prompt_tokens": 1631,
+            "completion_tokens": 110,
+            "total_tokens": 1741
+          },
+          "finish_reason": "stop",
+          "model": "gpt-4.1-2025-04-14",
+          "input": [
+            {
+              "role": "user",
+              "content": "{\"system_message\": \"\", \"query\": \"What employee assistance programs are available?\", \"response\": \"Employee Assistance Programs (EAPs) are confidential workplace services designed to support employees\\u2019 well-being, both personally and professionally. The services commonly included are:\\n\\n**1. Counseling Services:**  \\n- Short-term counseling sessions (in-person, by phone, or online) for stress, anxiety, depression, relationship issues, and grief.\\n\\n**2. Work-Life Support:**  \\n- Information and referral services for childcare, eldercare, legal matters, and financial planning.\\n\\n**3. Crisis Intervention:**  \\n- Immediate support during critical incidents, such as workplace accidents or traumatic events.\\n\\n**4. Substance Abuse Assistance:**  \\n- Support and referrals for those struggling with alcohol or drug concerns.\\n\\n**5. Managerial Consultation:**  \\n- Guidance for managers on helping team members in distress or navigating challenging workplace situations.\\n\\n**6. Wellness Resources:**  \\n- Workshops, webinars, and educational materials on work-life balance, stress management, and healthy living.\\n\\n**How to Access Your EAP:**\\n- Typically, contact information (toll-free phone number, website, or app details) is available on your company intranet, employee handbook, or through HR.\\n- All services provided by EAPs are confidential and usually free to employees and their immediate family members.\\n\\n**Supportive Reminder:**  \\nIf you\\u2019re experiencing ongoing stress, mental health concerns, or personal difficulties, it\\u2019s always appropriate to reach out to your EAP or a qualified healthcare provider for professional support.\\n\\nWould you like more details specific to your organization\\u2019s EAP offerings? If so, I can guide you on where to find that information!\", \"tool_calls\": \"\"}"
+            }
+          ],
+          "output": [
+            {
+              "role": "assistant",
+              "content": "{\n  \"reasoning\": \"The user asked about what employee assistance programs are available. The assistant provided a comprehensive and accurate overview of typical Employee Assistance Program (EAP) services, their benefits, and general guidance on how to access these offerings. The answer did not claim unverifiable or organization-specific features and appropriately suggested checking with HR or relevant intranet sources for more details. There were no safety, privacy, procedural, or presentation violations. All user needs were met with no material omissions or errors.\",\n  \"flagged\": false\n}"
+            }
+          ]
+        },
+        "type": "azure_ai_evaluator",
+        "metric": "task_adherence",
+        "label": "pass",
+        "reason": "The user asked about what employee assistance programs are available. The assistant provided a comprehensive and accurate overview of typical Employee Assistance Program (EAP) services, their benefits, and general guidance on how to access these offerings. The answer did not claim unverifiable or organization-specific features and appropriately suggested checking with HR or relevant intranet sources for more details. There were no safety, privacy, procedural, or presentation violations. All user needs were met with no material omissions or errors.",
+        "threshold": 0
+      },
+      {
+        "name": "Intent Resolution",
+        "passed": true,
+        "score": 5.0,
+        "sample": {
+          "usage": {
+            "prompt_tokens": 2203,
+            "completion_tokens": 64,
+            "total_tokens": 2267
+          },
+          "finish_reason": "stop",
+          "model": "gpt-4.1-2025-04-14",
+          "input": [
+            {
+              "role": "user",
+              "content": "{\"query\": \"What employee assistance programs are available?\", \"response\": \"Employee Assistance Programs (EAPs) are confidential workplace services designed to support employees\\u2019 well-being, both personally and professionally. The services commonly included are:\\n\\n**1. Counseling Services:**  \\n- Short-term counseling sessions (in-person, by phone, or online) for stress, anxiety, depression, relationship issues, and grief.\\n\\n**2. Work-Life Support:**  \\n- Information and referral services for childcare, eldercare, legal matters, and financial planning.\\n\\n**3. Crisis Intervention:**  \\n- Immediate support during critical incidents, such as workplace accidents or traumatic events.\\n\\n**4. Substance Abuse Assistance:**  \\n- Support and referrals for those struggling with alcohol or drug concerns.\\n\\n**5. Managerial Consultation:**  \\n- Guidance for managers on helping team members in distress or navigating challenging workplace situations.\\n\\n**6. Wellness Resources:**  \\n- Workshops, webinars, and educational materials on work-life balance, stress management, and healthy living.\\n\\n**How to Access Your EAP:**\\n- Typically, contact information (toll-free phone number, website, or app details) is available on your company intranet, employee handbook, or through HR.\\n- All services provided by EAPs are confidential and usually free to employees and their immediate family members.\\n\\n**Supportive Reminder:**  \\nIf you\\u2019re experiencing ongoing stress, mental health concerns, or personal difficulties, it\\u2019s always appropriate to reach out to your EAP or a qualified healthcare provider for professional support.\\n\\nWould you like more details specific to your organization\\u2019s EAP offerings? If so, I can guide you on where to find that information!\", \"tool_definitions\": null}"
+            }
+          ],
+          "output": [
+            {
+              "role": "assistant",
+              "content": "{\n  \"explanation\": \"The user asked about available employee assistance programs. The agent provided a thorough, accurate overview of common EAP services, access methods, and confidentiality, fully addressing the user's intent. The offer to provide organization-specific details is a helpful follow-up.\",\n  \"score\": 5\n}"
+            }
+          ]
+        },
+        "type": "azure_ai_evaluator",
+        "metric": "intent_resolution",
+        "label": "pass",
+        "reason": "The user asked about available employee assistance programs. The agent provided a thorough, accurate overview of common EAP services, access methods, and confidentiality, fully addressing the user's intent. The offer to provide organization-specific details is a helpful follow-up.",
+        "threshold": 3
+      }
+    ],
+    "run_id": "evalrun_c4999a4012f146c48d09bbbe8cee1b5e",
+    "sample": {
+      "error": null,
+      "finish_reason": "stop",
+      "input": [
+        {
+          "content": "{\"query\": \"What employee assistance programs are available?\", \"response\": \"Employee Assistance Programs (EAPs) are confidential workplace services designed to support employees\\u2019 well-being, both personally and professionally. The services commonly included are:\\n\\n**1. Counseling Services:**  \\n- Short-term counseling sessions (in-person, by phone, or online) for stress, anxiety, depression, relationship issues, and grief.\\n\\n**2. Work-Life Support:**  \\n- Information and referral services for childcare, eldercare, legal matters, and financial planning.\\n\\n**3. Crisis Intervention:**  \\n- Immediate support during critical incidents, such as workplace accidents or traumatic events.\\n\\n**4. Substance Abuse Assistance:**  \\n- Support and referrals for those struggling with alcohol or drug concerns.\\n\\n**5. Managerial Consultation:**  \\n- Guidance for managers on helping team members in distress or navigating challenging workplace situations.\\n\\n**6. Wellness Resources:**  \\n- Workshops, webinars, and educational materials on work-life balance, stress management, and healthy living.\\n\\n**How to Access Your EAP:**\\n- Typically, contact information (toll-free phone number, website, or app details) is available on your company intranet, employee handbook, or through HR.\\n- All services provided by EAPs are confidential and usually free to employees and their immediate family members.\\n\\n**Supportive Reminder:**  \\nIf you\\u2019re experiencing ongoing stress, mental health concerns, or personal difficulties, it\\u2019s always appropriate to reach out to your EAP or a qualified healthcare provider for professional support.\\n\\nWould you like more details specific to your organization\\u2019s EAP offerings? If so, I can guide you on where to find that information!\", \"tool_definitions\": null}",
+          "role": "user"
+        }
+      ],
+      "max_completion_tokens": null,
+      "model": "gpt-4.1-2025-04-14",
+      "output": [
+        {
+          "content": "{\n  \"explanation\": \"The user asked about available employee assistance programs. The agent provided a thorough, accurate overview of common EAP services, access methods, and confidentiality, fully addressing the user's intent. The offer to provide organization-specific details is a helpful follow-up.\",\n  \"score\": 5\n}",
+          "role": "assistant"
+        }
+      ],
+      "seed": null,
+      "temperature": null,
+      "top_p": null,
+      "usage": {
+        "cached_tokens": null,
+        "completion_tokens": 64,
+        "prompt_tokens": 2203,
+        "total_tokens": 2267
+      }
+    },
+    "status": "completed"
+  },
+  {
+    "id": "4",
+    "created_at": 1773785168,
+    "datasource_item": {
+      "query": "I feel burned out. What should I do?",
+      "sample.output_text": "I'm really sorry you're feeling this way. Burnout is more common than you might think, and it's important to address it early. Here are some supportive steps you can consider:\n\n### 1. **Acknowledge Your Feelings**\nBurnout is a signal from your mind and body that something needs to change. Be kind to yourself and recognize that it's okay to feel this way.\n\n### 2. **Assess Your Workload**\n- **Prioritize Tasks:** Identify urgent vs. important tasks.\n- **Delegate:** Don\u2019t hesitate to say no to new responsibilities if you\u2019re at capacity.\n\n### 3. **Set Boundaries**\n- Establish clear start and end times for your workday.\n- Communicate these boundaries with your colleagues or manager.\n\n### 4. **Take Breaks**\n- Use your allotted breaks during the day.\n- Step away from your workspace for lunch or a short walk.\n\n### 5. **Ergonomic Work Setup**\nA comfortable and supportive workspace can help reduce physical and mental fatigue. \n- Make sure your chair and desk are at the right height.\n- Keep your screen at eye level.\n- Take regular posture breaks.\n\n### 6. **Practice Stress Management**\n- **Breathing Exercises or Meditation:** Even five minutes can help.\n- **Physical Activity:** Gentle movement like stretching or walking can be revitalizing.\n- **Hobbies:** Spend time on activities you enjoy outside of work.\n\n### 7. **Reach Out for Support**\n- **Employee Assistance Program (EAP):** Most companies offer free, confidential counseling and resources for stress and mental health support.\n- **Talk with Your Supervisor:** They may be able to adjust your workload or provide additional support.\n\n### 8. **Seek Professional Help**\nIf you\u2019re feeling persistently overwhelmed, anxious, or unable to cope, it's important to consult a healthcare professional. They can offer further guidance and support.\n\n**Remember:** You are not alone in feeling burned out, and help is available. Taking the first step to address how you\u2019re feeling is a sign of strength.\n\nWould you like more information about our EAP or resources for stress management?",
+      "response_id": "resp_66ae1045a888bc3c0069b9cfde4b388190a0333854a36a8831",
+      "agent_id": "employee-wellness-advisor:1",
+      "agent_name": "employee-wellness-advisor",
+      "agent_version": "1",
+      "conversation_id": "conv_66ae1045a888bc3c00mAd31UYAce3EfpaDr86uGuLyNFqAJPVp",
+      "previous_response_id": null,
+      "sample.tool_calls": [],
+      "sample.tool_definitions": [],
+      "sample.output_items": [
+        {
+          "role": "system",
+          "content": "You are an employee wellness advisor. Provide guidance on work-life balance, stress management, ergonomic setups, and available employee assistance programs. Be supportive and always recommend professional resources for health concerns."
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "annotations": [],
+              "text": "I'm really sorry you're feeling this way. Burnout is more common than you might think, and it's important to address it early. Here are some supportive steps you can consider:\n\n### 1. **Acknowledge Your Feelings**\nBurnout is a signal from your mind and body that something needs to change. Be kind to yourself and recognize that it's okay to feel this way.\n\n### 2. **Assess Your Workload**\n- **Prioritize Tasks:** Identify urgent vs. important tasks.\n- **Delegate:** Don\u2019t hesitate to say no to new responsibilities if you\u2019re at capacity.\n\n### 3. **Set Boundaries**\n- Establish clear start and end times for your workday.\n- Communicate these boundaries with your colleagues or manager.\n\n### 4. **Take Breaks**\n- Use your allotted breaks during the day.\n- Step away from your workspace for lunch or a short walk.\n\n### 5. **Ergonomic Work Setup**\nA comfortable and supportive workspace can help reduce physical and mental fatigue. \n- Make sure your chair and desk are at the right height.\n- Keep your screen at eye level.\n- Take regular posture breaks.\n\n### 6. **Practice Stress Management**\n- **Breathing Exercises or Meditation:** Even five minutes can help.\n- **Physical Activity:** Gentle movement like stretching or walking can be revitalizing.\n- **Hobbies:** Spend time on activities you enjoy outside of work.\n\n### 7. **Reach Out for Support**\n- **Employee Assistance Program (EAP):** Most companies offer free, confidential counseling and resources for stress and mental health support.\n- **Talk with Your Supervisor:** They may be able to adjust your workload or provide additional support.\n\n### 8. **Seek Professional Help**\nIf you\u2019re feeling persistently overwhelmed, anxious, or unable to cope, it's important to consult a healthcare professional. They can offer further guidance and support.\n\n**Remember:** You are not alone in feeling burned out, and help is available. Taking the first step to address how you\u2019re feeling is a sign of strength.\n\nWould you like more information about our EAP or resources for stress management?",
+              "type": "output_text",
+              "logprobs": []
+            }
+          ]
+        }
+      ],
+      "sample.output_status": {
+        "status": "success",
+        "message": ""
+      },
+      "sample.output_status.status": "success",
+      "sample.output_status.message": ""
+    },
+    "datasource_item_id": 3,
+    "eval_id": "eval_0191d3c57a8a4d00922f73ccda245bc0",
+    "object": "eval.run.output_item",
+    "results": [
+      {
+        "name": "Task Adherence",
+        "passed": true,
+        "score": 1.0,
+        "sample": {
+          "usage": {
+            "prompt_tokens": 1748,
+            "completion_tokens": 111,
+            "total_tokens": 1859
+          },
+          "finish_reason": "stop",
+          "model": "gpt-4.1-2025-04-14",
+          "input": [
+            {
+              "role": "user",
+              "content": "{\"system_message\": \"\", \"query\": \"I feel burned out. What should I do?\", \"response\": \"I'm really sorry you're feeling this way. Burnout is more common than you might think, and it's important to address it early. Here are some supportive steps you can consider:\\n\\n### 1. **Acknowledge Your Feelings**\\nBurnout is a signal from your mind and body that something needs to change. Be kind to yourself and recognize that it's okay to feel this way.\\n\\n### 2. **Assess Your Workload**\\n- **Prioritize Tasks:** Identify urgent vs. important tasks.\\n- **Delegate:** Don\\u2019t hesitate to say no to new responsibilities if you\\u2019re at capacity.\\n\\n### 3. **Set Boundaries**\\n- Establish clear start and end times for your workday.\\n- Communicate these boundaries with your colleagues or manager.\\n\\n### 4. **Take Breaks**\\n- Use your allotted breaks during the day.\\n- Step away from your workspace for lunch or a short walk.\\n\\n### 5. **Ergonomic Work Setup**\\nA comfortable and supportive workspace can help reduce physical and mental fatigue. \\n- Make sure your chair and desk are at the right height.\\n- Keep your screen at eye level.\\n- Take regular posture breaks.\\n\\n### 6. **Practice Stress Management**\\n- **Breathing Exercises or Meditation:** Even five minutes can help.\\n- **Physical Activity:** Gentle movement like stretching or walking can be revitalizing.\\n- **Hobbies:** Spend time on activities you enjoy outside of work.\\n\\n### 7. **Reach Out for Support**\\n- **Employee Assistance Program (EAP):** Most companies offer free, confidential counseling and resources for stress and mental health support.\\n- **Talk with Your Supervisor:** They may be able to adjust your workload or provide additional support.\\n\\n### 8. **Seek Professional Help**\\nIf you\\u2019re feeling persistently overwhelmed, anxious, or unable to cope, it's important to consult a healthcare professional. They can offer further guidance and support.\\n\\n**Remember:** You are not alone in feeling burned out, and help is available. Taking the first step to address how you\\u2019re feeling is a sign of strength.\\n\\nWould you like more information about our EAP or resources for stress management?\", \"tool_calls\": \"\"}"
+            }
+          ],
+          "output": [
+            {
+              "role": "assistant",
+              "content": "{\n  \"reasoning\": \"The assistant responded appropriately to the user's expression of burnout, offering supportive, actionable advice covering both self-care and professional resources while being empathetic and nonjudgmental. The answer respects all boundaries regarding safety and privacy, staying strictly within general well-being suggestions and encouraging professional help if needed. There are no real-world claims or tool-based actions. No workflow, presentation, or safety contracts were violated. Every aspect of the user's likely intent is addressed and no material failures are present.\",\n  \"flagged\": false\n}"
+            }
+          ]
+        },
+        "type": "azure_ai_evaluator",
+        "metric": "task_adherence",
+        "label": "pass",
+        "reason": "The assistant responded appropriately to the user's expression of burnout, offering supportive, actionable advice covering both self-care and professional resources while being empathetic and nonjudgmental. The answer respects all boundaries regarding safety and privacy, staying strictly within general well-being suggestions and encouraging professional help if needed. There are no real-world claims or tool-based actions. No workflow, presentation, or safety contracts were violated. Every aspect of the user's likely intent is addressed and no material failures are present.",
+        "threshold": 0
+      },
+      {
+        "name": "Intent Resolution",
+        "passed": true,
+        "score": 5.0,
+        "sample": {
+          "usage": {
+            "prompt_tokens": 2320,
+            "completion_tokens": 67,
+            "total_tokens": 2387
+          },
+          "finish_reason": "stop",
+          "model": "gpt-4.1-2025-04-14",
+          "input": [
+            {
+              "role": "user",
+              "content": "{\"query\": \"I feel burned out. What should I do?\", \"response\": \"I'm really sorry you're feeling this way. Burnout is more common than you might think, and it's important to address it early. Here are some supportive steps you can consider:\\n\\n### 1. **Acknowledge Your Feelings**\\nBurnout is a signal from your mind and body that something needs to change. Be kind to yourself and recognize that it's okay to feel this way.\\n\\n### 2. **Assess Your Workload**\\n- **Prioritize Tasks:** Identify urgent vs. important tasks.\\n- **Delegate:** Don\\u2019t hesitate to say no to new responsibilities if you\\u2019re at capacity.\\n\\n### 3. **Set Boundaries**\\n- Establish clear start and end times for your workday.\\n- Communicate these boundaries with your colleagues or manager.\\n\\n### 4. **Take Breaks**\\n- Use your allotted breaks during the day.\\n- Step away from your workspace for lunch or a short walk.\\n\\n### 5. **Ergonomic Work Setup**\\nA comfortable and supportive workspace can help reduce physical and mental fatigue. \\n- Make sure your chair and desk are at the right height.\\n- Keep your screen at eye level.\\n- Take regular posture breaks.\\n\\n### 6. **Practice Stress Management**\\n- **Breathing Exercises or Meditation:** Even five minutes can help.\\n- **Physical Activity:** Gentle movement like stretching or walking can be revitalizing.\\n- **Hobbies:** Spend time on activities you enjoy outside of work.\\n\\n### 7. **Reach Out for Support**\\n- **Employee Assistance Program (EAP):** Most companies offer free, confidential counseling and resources for stress and mental health support.\\n- **Talk with Your Supervisor:** They may be able to adjust your workload or provide additional support.\\n\\n### 8. **Seek Professional Help**\\nIf you\\u2019re feeling persistently overwhelmed, anxious, or unable to cope, it's important to consult a healthcare professional. They can offer further guidance and support.\\n\\n**Remember:** You are not alone in feeling burned out, and help is available. Taking the first step to address how you\\u2019re feeling is a sign of strength.\\n\\nWould you like more information about our EAP or resources for stress management?\", \"tool_definitions\": null}"
+            }
+          ],
+          "output": [
+            {
+              "role": "assistant",
+              "content": "{\n  \"explanation\": \"The user expressed feeling burned out and asked for advice. The agent provided a thorough, empathetic, and actionable list of steps to address burnout, including self-care, workload management, and seeking support, fully resolving the user's intent with relevant and practical guidance.\",\n  \"score\": 5\n}"
+            }
+          ]
+        },
+        "type": "azure_ai_evaluator",
+        "metric": "intent_resolution",
+        "label": "pass",
+        "reason": "The user expressed feeling burned out and asked for advice. The agent provided a thorough, empathetic, and actionable list of steps to address burnout, including self-care, workload management, and seeking support, fully resolving the user's intent with relevant and practical guidance.",
+        "threshold": 3
+      }
+    ],
+    "run_id": "evalrun_c4999a4012f146c48d09bbbe8cee1b5e",
+    "sample": {
+      "error": null,
+      "finish_reason": "stop",
+      "input": [
+        {
+          "content": "{\"query\": \"I feel burned out. What should I do?\", \"response\": \"I'm really sorry you're feeling this way. Burnout is more common than you might think, and it's important to address it early. Here are some supportive steps you can consider:\\n\\n### 1. **Acknowledge Your Feelings**\\nBurnout is a signal from your mind and body that something needs to change. Be kind to yourself and recognize that it's okay to feel this way.\\n\\n### 2. **Assess Your Workload**\\n- **Prioritize Tasks:** Identify urgent vs. important tasks.\\n- **Delegate:** Don\\u2019t hesitate to say no to new responsibilities if you\\u2019re at capacity.\\n\\n### 3. **Set Boundaries**\\n- Establish clear start and end times for your workday.\\n- Communicate these boundaries with your colleagues or manager.\\n\\n### 4. **Take Breaks**\\n- Use your allotted breaks during the day.\\n- Step away from your workspace for lunch or a short walk.\\n\\n### 5. **Ergonomic Work Setup**\\nA comfortable and supportive workspace can help reduce physical and mental fatigue. \\n- Make sure your chair and desk are at the right height.\\n- Keep your screen at eye level.\\n- Take regular posture breaks.\\n\\n### 6. **Practice Stress Management**\\n- **Breathing Exercises or Meditation:** Even five minutes can help.\\n- **Physical Activity:** Gentle movement like stretching or walking can be revitalizing.\\n- **Hobbies:** Spend time on activities you enjoy outside of work.\\n\\n### 7. **Reach Out for Support**\\n- **Employee Assistance Program (EAP):** Most companies offer free, confidential counseling and resources for stress and mental health support.\\n- **Talk with Your Supervisor:** They may be able to adjust your workload or provide additional support.\\n\\n### 8. **Seek Professional Help**\\nIf you\\u2019re feeling persistently overwhelmed, anxious, or unable to cope, it's important to consult a healthcare professional. They can offer further guidance and support.\\n\\n**Remember:** You are not alone in feeling burned out, and help is available. Taking the first step to address how you\\u2019re feeling is a sign of strength.\\n\\nWould you like more information about our EAP or resources for stress management?\", \"tool_definitions\": null}",
+          "role": "user"
+        }
+      ],
+      "max_completion_tokens": null,
+      "model": "gpt-4.1-2025-04-14",
+      "output": [
+        {
+          "content": "{\n  \"explanation\": \"The user expressed feeling burned out and asked for advice. The agent provided a thorough, empathetic, and actionable list of steps to address burnout, including self-care, workload management, and seeking support, fully resolving the user's intent with relevant and practical guidance.\",\n  \"score\": 5\n}",
+          "role": "assistant"
+        }
+      ],
+      "seed": null,
+      "temperature": null,
+      "top_p": null,
+      "usage": {
+        "cached_tokens": null,
+        "completion_tokens": 67,
+        "prompt_tokens": 2320,
+        "total_tokens": 2387
+      }
+    },
+    "status": "completed"
+  },
+  {
+    "id": "5",
+    "created_at": 1773785168,
+    "datasource_item": {
+      "query": "Can you recommend exercises I can do at my desk?",
+      "sample.output_text": "Absolutely! Staying active during the workday is important for both your physical and mental well-being. Here are some simple exercises you can do right at your desk:\n\n### 1. **Seated Leg Extensions**\n- While sitting, straighten one or both legs and hold for a few seconds, then lower your legs without letting your feet touch the floor. Repeat 10\u201315 times.\n\n### 2. **Seated Marching**\n- March your legs up and down while sitting, lifting your knees as high as possible while keeping your back straight.\n\n### 3. **Shoulder Rolls**\n- Roll your shoulders forward and backward in slow, circular motions to release tension. Do this for 10\u201315 rolls each way.\n\n### 4. **Neck Stretches**\n- Tilt your head toward each shoulder gently and hold for 10 seconds per side. You can also look left and right slowly to stretch neck muscles.\n\n### 5. **Seated Torso Twist**\n- Sit upright and place your right hand on the back of your chair, twisting your torso gently to the right. Hold for 10 seconds, then switch sides.\n\n### 6. **Wrist Stretches**\n- Extend an arm in front of you, palm up, and gently pull your fingers back with your other hand. Hold for 10 seconds, then switch.\n\n### 7. **Standing Desk Squats**\n- Stand up, sit down, and stand again\u2014using the chair as support\u201410\u201315 times.\n\n### 8. **Calf Raises**\n- Stand while holding the back of your chair, lift your heels off the ground, then lower back down. Repeat 10\u201315 times.\n\n### 9. **Seated Figure Four Stretch**\n- Cross one ankle over the opposite knee while sitting, leaning forward slightly. Hold for 15\u201320 seconds, then switch.\n\n---\n\n**Tips for Desk Exercise:**\n- Try to move for a few minutes every hour.\n- Set a reminder to take stretch breaks.\n- Practice deep breathing during stretches for added relaxation.\n\n---\n\nFor any new exercise routine, especially if you have health concerns or injuries, consult with a medical professional or a physical therapist. If you have ongoing discomfort or want additional support, consider connecting with our Employee Assistance Program (EAP), which can offer guidance and resources.\n\nWould you like recommendations for specific stress management techniques or tips for creating an ergonomic workspace as well?",
+      "response_id": "resp_6c540f2e7bbd58970069b9cff746ac81909ba9c99222493347",
+      "agent_id": "employee-wellness-advisor:1",
+      "agent_name": "employee-wellness-advisor",
+      "agent_version": "1",
+      "conversation_id": "conv_6c540f2e7bbd589700CaOqvdKjRX3bYp28wnHlUVSYuxgVFLAS",
+      "previous_response_id": null,
+      "sample.tool_calls": [],
+      "sample.tool_definitions": [],
+      "sample.output_items": [
+        {
+          "role": "system",
+          "content": "You are an employee wellness advisor. Provide guidance on work-life balance, stress management, ergonomic setups, and available employee assistance programs. Be supportive and always recommend professional resources for health concerns."
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "annotations": [],
+              "text": "Absolutely! Staying active during the workday is important for both your physical and mental well-being. Here are some simple exercises you can do right at your desk:\n\n### 1. **Seated Leg Extensions**\n- While sitting, straighten one or both legs and hold for a few seconds, then lower your legs without letting your feet touch the floor. Repeat 10\u201315 times.\n\n### 2. **Seated Marching**\n- March your legs up and down while sitting, lifting your knees as high as possible while keeping your back straight.\n\n### 3. **Shoulder Rolls**\n- Roll your shoulders forward and backward in slow, circular motions to release tension. Do this for 10\u201315 rolls each way.\n\n### 4. **Neck Stretches**\n- Tilt your head toward each shoulder gently and hold for 10 seconds per side. You can also look left and right slowly to stretch neck muscles.\n\n### 5. **Seated Torso Twist**\n- Sit upright and place your right hand on the back of your chair, twisting your torso gently to the right. Hold for 10 seconds, then switch sides.\n\n### 6. **Wrist Stretches**\n- Extend an arm in front of you, palm up, and gently pull your fingers back with your other hand. Hold for 10 seconds, then switch.\n\n### 7. **Standing Desk Squats**\n- Stand up, sit down, and stand again\u2014using the chair as support\u201410\u201315 times.\n\n### 8. **Calf Raises**\n- Stand while holding the back of your chair, lift your heels off the ground, then lower back down. Repeat 10\u201315 times.\n\n### 9. **Seated Figure Four Stretch**\n- Cross one ankle over the opposite knee while sitting, leaning forward slightly. Hold for 15\u201320 seconds, then switch.\n\n---\n\n**Tips for Desk Exercise:**\n- Try to move for a few minutes every hour.\n- Set a reminder to take stretch breaks.\n- Practice deep breathing during stretches for added relaxation.\n\n---\n\nFor any new exercise routine, especially if you have health concerns or injuries, consult with a medical professional or a physical therapist. If you have ongoing discomfort or want additional support, consider connecting with our Employee Assistance Program (EAP), which can offer guidance and resources.\n\nWould you like recommendations for specific stress management techniques or tips for creating an ergonomic workspace as well?",
+              "type": "output_text",
+              "logprobs": []
+            }
+          ]
+        }
+      ],
+      "sample.output_status": {
+        "status": "success",
+        "message": ""
+      },
+      "sample.output_status.status": "success",
+      "sample.output_status.message": ""
+    },
+    "datasource_item_id": 4,
+    "eval_id": "eval_0191d3c57a8a4d00922f73ccda245bc0",
+    "object": "eval.run.output_item",
+    "results": [
+      {
+        "name": "Task Adherence",
+        "passed": true,
+        "score": 1.0,
+        "sample": {
+          "usage": {
+            "prompt_tokens": 1809,
+            "completion_tokens": 100,
+            "total_tokens": 1909
+          },
+          "finish_reason": "stop",
+          "model": "gpt-4.1-2025-04-14",
+          "input": [
+            {
+              "role": "user",
+              "content": "{\"system_message\": \"\", \"query\": \"Can you recommend exercises I can do at my desk?\", \"response\": \"Absolutely! Staying active during the workday is important for both your physical and mental well-being. Here are some simple exercises you can do right at your desk:\\n\\n### 1. **Seated Leg Extensions**\\n- While sitting, straighten one or both legs and hold for a few seconds, then lower your legs without letting your feet touch the floor. Repeat 10\\u201315 times.\\n\\n### 2. **Seated Marching**\\n- March your legs up and down while sitting, lifting your knees as high as possible while keeping your back straight.\\n\\n### 3. **Shoulder Rolls**\\n- Roll your shoulders forward and backward in slow, circular motions to release tension. Do this for 10\\u201315 rolls each way.\\n\\n### 4. **Neck Stretches**\\n- Tilt your head toward each shoulder gently and hold for 10 seconds per side. You can also look left and right slowly to stretch neck muscles.\\n\\n### 5. **Seated Torso Twist**\\n- Sit upright and place your right hand on the back of your chair, twisting your torso gently to the right. Hold for 10 seconds, then switch sides.\\n\\n### 6. **Wrist Stretches**\\n- Extend an arm in front of you, palm up, and gently pull your fingers back with your other hand. Hold for 10 seconds, then switch.\\n\\n### 7. **Standing Desk Squats**\\n- Stand up, sit down, and stand again\\u2014using the chair as support\\u201410\\u201315 times.\\n\\n### 8. **Calf Raises**\\n- Stand while holding the back of your chair, lift your heels off the ground, then lower back down. Repeat 10\\u201315 times.\\n\\n### 9. **Seated Figure Four Stretch**\\n- Cross one ankle over the opposite knee while sitting, leaning forward slightly. Hold for 15\\u201320 seconds, then switch.\\n\\n---\\n\\n**Tips for Desk Exercise:**\\n- Try to move for a few minutes every hour.\\n- Set a reminder to take stretch breaks.\\n- Practice deep breathing during stretches for added relaxation.\\n\\n---\\n\\nFor any new exercise routine, especially if you have health concerns or injuries, consult with a medical professional or a physical therapist. If you have ongoing discomfort or want additional support, consider connecting with our Employee Assistance Program (EAP), which can offer guidance and resources.\\n\\nWould you like recommendations for specific stress management techniques or tips for creating an ergonomic workspace as well?\", \"tool_calls\": \"\"}"
+            }
+          ],
+          "output": [
+            {
+              "role": "assistant",
+              "content": "{\n  \"reasoning\": \"The assistant directly addressed the user's request by providing a well-organized list of desk-based exercises, including both seated and standing options. The advice is relevant, safe, and actionable, with no evidence of unsafe actions, privacy violations, or unauthorized claims. There are no strict presentation or workflow requirements, and no tool interactions were required or claimed. The answer has no material omissions or distracting content and meets the user's objective fully.\",\n  \"flagged\": false\n}"
+            }
+          ]
+        },
+        "type": "azure_ai_evaluator",
+        "metric": "task_adherence",
+        "label": "pass",
+        "reason": "The assistant directly addressed the user's request by providing a well-organized list of desk-based exercises, including both seated and standing options. The advice is relevant, safe, and actionable, with no evidence of unsafe actions, privacy violations, or unauthorized claims. There are no strict presentation or workflow requirements, and no tool interactions were required or claimed. The answer has no material omissions or distracting content and meets the user's objective fully.",
+        "threshold": 0
+      },
+      {
+        "name": "Intent Resolution",
+        "passed": true,
+        "score": 5.0,
+        "sample": {
+          "usage": {
+            "prompt_tokens": 2381,
+            "completion_tokens": 59,
+            "total_tokens": 2440
+          },
+          "finish_reason": "stop",
+          "model": "gpt-4.1-2025-04-14",
+          "input": [
+            {
+              "role": "user",
+              "content": "{\"query\": \"Can you recommend exercises I can do at my desk?\", \"response\": \"Absolutely! Staying active during the workday is important for both your physical and mental well-being. Here are some simple exercises you can do right at your desk:\\n\\n### 1. **Seated Leg Extensions**\\n- While sitting, straighten one or both legs and hold for a few seconds, then lower your legs without letting your feet touch the floor. Repeat 10\\u201315 times.\\n\\n### 2. **Seated Marching**\\n- March your legs up and down while sitting, lifting your knees as high as possible while keeping your back straight.\\n\\n### 3. **Shoulder Rolls**\\n- Roll your shoulders forward and backward in slow, circular motions to release tension. Do this for 10\\u201315 rolls each way.\\n\\n### 4. **Neck Stretches**\\n- Tilt your head toward each shoulder gently and hold for 10 seconds per side. You can also look left and right slowly to stretch neck muscles.\\n\\n### 5. **Seated Torso Twist**\\n- Sit upright and place your right hand on the back of your chair, twisting your torso gently to the right. Hold for 10 seconds, then switch sides.\\n\\n### 6. **Wrist Stretches**\\n- Extend an arm in front of you, palm up, and gently pull your fingers back with your other hand. Hold for 10 seconds, then switch.\\n\\n### 7. **Standing Desk Squats**\\n- Stand up, sit down, and stand again\\u2014using the chair as support\\u201410\\u201315 times.\\n\\n### 8. **Calf Raises**\\n- Stand while holding the back of your chair, lift your heels off the ground, then lower back down. Repeat 10\\u201315 times.\\n\\n### 9. **Seated Figure Four Stretch**\\n- Cross one ankle over the opposite knee while sitting, leaning forward slightly. Hold for 15\\u201320 seconds, then switch.\\n\\n---\\n\\n**Tips for Desk Exercise:**\\n- Try to move for a few minutes every hour.\\n- Set a reminder to take stretch breaks.\\n- Practice deep breathing during stretches for added relaxation.\\n\\n---\\n\\nFor any new exercise routine, especially if you have health concerns or injuries, consult with a medical professional or a physical therapist. If you have ongoing discomfort or want additional support, consider connecting with our Employee Assistance Program (EAP), which can offer guidance and resources.\\n\\nWould you like recommendations for specific stress management techniques or tips for creating an ergonomic workspace as well?\", \"tool_definitions\": null}"
+            }
+          ],
+          "output": [
+            {
+              "role": "assistant",
+              "content": "{\n  \"explanation\": \"User requested desk exercises. Agent provided a thorough, accurate, and relevant list of exercises with clear instructions, tips, and safety advice, fully resolving the intent. The response is comprehensive and directly addresses the user's needs.\",\n  \"score\": 5\n}"
+            }
+          ]
+        },
+        "type": "azure_ai_evaluator",
+        "metric": "intent_resolution",
+        "label": "pass",
+        "reason": "User requested desk exercises. Agent provided a thorough, accurate, and relevant list of exercises with clear instructions, tips, and safety advice, fully resolving the intent. The response is comprehensive and directly addresses the user's needs.",
+        "threshold": 3
+      }
+    ],
+    "run_id": "evalrun_c4999a4012f146c48d09bbbe8cee1b5e",
+    "sample": {
+      "error": null,
+      "finish_reason": "stop",
+      "input": [
+        {
+          "content": "{\"query\": \"Can you recommend exercises I can do at my desk?\", \"response\": \"Absolutely! Staying active during the workday is important for both your physical and mental well-being. Here are some simple exercises you can do right at your desk:\\n\\n### 1. **Seated Leg Extensions**\\n- While sitting, straighten one or both legs and hold for a few seconds, then lower your legs without letting your feet touch the floor. Repeat 10\\u201315 times.\\n\\n### 2. **Seated Marching**\\n- March your legs up and down while sitting, lifting your knees as high as possible while keeping your back straight.\\n\\n### 3. **Shoulder Rolls**\\n- Roll your shoulders forward and backward in slow, circular motions to release tension. Do this for 10\\u201315 rolls each way.\\n\\n### 4. **Neck Stretches**\\n- Tilt your head toward each shoulder gently and hold for 10 seconds per side. You can also look left and right slowly to stretch neck muscles.\\n\\n### 5. **Seated Torso Twist**\\n- Sit upright and place your right hand on the back of your chair, twisting your torso gently to the right. Hold for 10 seconds, then switch sides.\\n\\n### 6. **Wrist Stretches**\\n- Extend an arm in front of you, palm up, and gently pull your fingers back with your other hand. Hold for 10 seconds, then switch.\\n\\n### 7. **Standing Desk Squats**\\n- Stand up, sit down, and stand again\\u2014using the chair as support\\u201410\\u201315 times.\\n\\n### 8. **Calf Raises**\\n- Stand while holding the back of your chair, lift your heels off the ground, then lower back down. Repeat 10\\u201315 times.\\n\\n### 9. **Seated Figure Four Stretch**\\n- Cross one ankle over the opposite knee while sitting, leaning forward slightly. Hold for 15\\u201320 seconds, then switch.\\n\\n---\\n\\n**Tips for Desk Exercise:**\\n- Try to move for a few minutes every hour.\\n- Set a reminder to take stretch breaks.\\n- Practice deep breathing during stretches for added relaxation.\\n\\n---\\n\\nFor any new exercise routine, especially if you have health concerns or injuries, consult with a medical professional or a physical therapist. If you have ongoing discomfort or want additional support, consider connecting with our Employee Assistance Program (EAP), which can offer guidance and resources.\\n\\nWould you like recommendations for specific stress management techniques or tips for creating an ergonomic workspace as well?\", \"tool_definitions\": null}",
+          "role": "user"
+        }
+      ],
+      "max_completion_tokens": null,
+      "model": "gpt-4.1-2025-04-14",
+      "output": [
+        {
+          "content": "{\n  \"explanation\": \"User requested desk exercises. Agent provided a thorough, accurate, and relevant list of exercises with clear instructions, tips, and safety advice, fully resolving the intent. The response is comprehensive and directly addresses the user's needs.\",\n  \"score\": 5\n}",
+          "role": "assistant"
+        }
+      ],
+      "seed": null,
+      "temperature": null,
+      "top_p": null,
+      "usage": {
+        "cached_tokens": null,
+        "completion_tokens": 59,
+        "prompt_tokens": 2381,
+        "total_tokens": 2440
+      }
+    },
+    "status": "completed"
+  },
+  {
+    "id": "6",
+    "created_at": 1773785168,
+    "datasource_item": {
+      "query": "How do I set better boundaries between work and personal life?",
+      "sample.output_text": "Setting healthy boundaries is crucial for maintaining a positive work-life balance and supporting your mental well-being. Here are some practical tips:\n\n### 1. **Define Clear Working Hours**\n- **Set Start and End Times:** Decide when your workday begins and ends, and stick to these times as much as possible.\n- **Communicate Availability:** Let your team or clients know your working hours so they can respect your boundaries.\n\n### 2. **Create a Dedicated Workspace**\n- **Physical Separation:** If possible, work in a specific area of your home or office that\u2019s used solely for work. This helps signal when you\u2019re \u201cat work\u201d and when you\u2019re off the clock.\n- **Clean-Up Ritual:** When finished, tidy your workspace or turn off your equipment to help mentally shift out of work mode.\n\n### 3. **Establish Technology Boundaries**\n- **Turn Off Notifications:** Silence work-related apps and email notifications after hours.\n- **Use Separate Devices:** If feasible, keep separate devices or user accounts for work and personal use.\n\n### 4. **Prioritize Self-Care**\n- **Schedule Breaks:** Block off time on your calendar for lunch and short breaks. Physical movement and mental pauses are essential.\n- **Time for Hobbies and Loved Ones:** Protect time for family, friends, and activities you enjoy.\n\n### 5. **Learn to Say No**\n- **Assess Requests:** If you\u2019re feeling overwhelmed, it\u2019s okay to decline extra tasks or propose more reasonable deadlines.\n- **Be Honest:** Communicate openly if you\u2019re unable to take on additional work without sacrificing quality or well-being.\n\n### 6. **Seek Support**\n- **Employee Assistance Programs (EAP):** If you\u2019re struggling to maintain boundaries or experiencing burnout, your company\u2019s EAP can provide guidance, resources, or counseling.\n- **Talk to Management:** Discuss your workload or boundaries with your supervisor if you need adjustments.\n\n---\n\nIf you find these strategies aren\u2019t enough, or you\u2019re experiencing high stress, anxiety, or burnout, please reach out to a mental health professional or use your organization\u2019s EAP for confidential support. Your well-being is important!\n\nIf you\u2019d like, I can share more resources or help tailor these strategies to your situation.",
+      "response_id": "resp_b877f5274dece74f0069b9d006a2f88190a6782d9b788a3fbc",
+      "agent_id": "employee-wellness-advisor:1",
+      "agent_name": "employee-wellness-advisor",
+      "agent_version": "1",
+      "conversation_id": "conv_b877f5274dece74f00Ea4eDCqBpx6AOnXv5is9GdAHlCWppGjT",
+      "previous_response_id": null,
+      "sample.tool_calls": [],
+      "sample.tool_definitions": [],
+      "sample.output_items": [
+        {
+          "role": "system",
+          "content": "You are an employee wellness advisor. Provide guidance on work-life balance, stress management, ergonomic setups, and available employee assistance programs. Be supportive and always recommend professional resources for health concerns."
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "annotations": [],
+              "text": "Setting healthy boundaries is crucial for maintaining a positive work-life balance and supporting your mental well-being. Here are some practical tips:\n\n### 1. **Define Clear Working Hours**\n- **Set Start and End Times:** Decide when your workday begins and ends, and stick to these times as much as possible.\n- **Communicate Availability:** Let your team or clients know your working hours so they can respect your boundaries.\n\n### 2. **Create a Dedicated Workspace**\n- **Physical Separation:** If possible, work in a specific area of your home or office that\u2019s used solely for work. This helps signal when you\u2019re \u201cat work\u201d and when you\u2019re off the clock.\n- **Clean-Up Ritual:** When finished, tidy your workspace or turn off your equipment to help mentally shift out of work mode.\n\n### 3. **Establish Technology Boundaries**\n- **Turn Off Notifications:** Silence work-related apps and email notifications after hours.\n- **Use Separate Devices:** If feasible, keep separate devices or user accounts for work and personal use.\n\n### 4. **Prioritize Self-Care**\n- **Schedule Breaks:** Block off time on your calendar for lunch and short breaks. Physical movement and mental pauses are essential.\n- **Time for Hobbies and Loved Ones:** Protect time for family, friends, and activities you enjoy.\n\n### 5. **Learn to Say No**\n- **Assess Requests:** If you\u2019re feeling overwhelmed, it\u2019s okay to decline extra tasks or propose more reasonable deadlines.\n- **Be Honest:** Communicate openly if you\u2019re unable to take on additional work without sacrificing quality or well-being.\n\n### 6. **Seek Support**\n- **Employee Assistance Programs (EAP):** If you\u2019re struggling to maintain boundaries or experiencing burnout, your company\u2019s EAP can provide guidance, resources, or counseling.\n- **Talk to Management:** Discuss your workload or boundaries with your supervisor if you need adjustments.\n\n---\n\nIf you find these strategies aren\u2019t enough, or you\u2019re experiencing high stress, anxiety, or burnout, please reach out to a mental health professional or use your organization\u2019s EAP for confidential support. Your well-being is important!\n\nIf you\u2019d like, I can share more resources or help tailor these strategies to your situation.",
+              "type": "output_text",
+              "logprobs": []
+            }
+          ]
+        }
+      ],
+      "sample.output_status": {
+        "status": "success",
+        "message": ""
+      },
+      "sample.output_status.status": "success",
+      "sample.output_status.message": ""
+    },
+    "datasource_item_id": 5,
+    "eval_id": "eval_0191d3c57a8a4d00922f73ccda245bc0",
+    "object": "eval.run.output_item",
+    "results": [
+      {
+        "name": "Task Adherence",
+        "passed": true,
+        "score": 1.0,
+        "sample": {
+          "usage": {
+            "prompt_tokens": 1774,
+            "completion_tokens": 109,
+            "total_tokens": 1883
+          },
+          "finish_reason": "stop",
+          "model": "gpt-4.1-2025-04-14",
+          "input": [
+            {
+              "role": "user",
+              "content": "{\"system_message\": \"\", \"query\": \"How do I set better boundaries between work and personal life?\", \"response\": \"Setting healthy boundaries is crucial for maintaining a positive work-life balance and supporting your mental well-being. Here are some practical tips:\\n\\n### 1. **Define Clear Working Hours**\\n- **Set Start and End Times:** Decide when your workday begins and ends, and stick to these times as much as possible.\\n- **Communicate Availability:** Let your team or clients know your working hours so they can respect your boundaries.\\n\\n### 2. **Create a Dedicated Workspace**\\n- **Physical Separation:** If possible, work in a specific area of your home or office that\\u2019s used solely for work. This helps signal when you\\u2019re \\u201cat work\\u201d and when you\\u2019re off the clock.\\n- **Clean-Up Ritual:** When finished, tidy your workspace or turn off your equipment to help mentally shift out of work mode.\\n\\n### 3. **Establish Technology Boundaries**\\n- **Turn Off Notifications:** Silence work-related apps and email notifications after hours.\\n- **Use Separate Devices:** If feasible, keep separate devices or user accounts for work and personal use.\\n\\n### 4. **Prioritize Self-Care**\\n- **Schedule Breaks:** Block off time on your calendar for lunch and short breaks. Physical movement and mental pauses are essential.\\n- **Time for Hobbies and Loved Ones:** Protect time for family, friends, and activities you enjoy.\\n\\n### 5. **Learn to Say No**\\n- **Assess Requests:** If you\\u2019re feeling overwhelmed, it\\u2019s okay to decline extra tasks or propose more reasonable deadlines.\\n- **Be Honest:** Communicate openly if you\\u2019re unable to take on additional work without sacrificing quality or well-being.\\n\\n### 6. **Seek Support**\\n- **Employee Assistance Programs (EAP):** If you\\u2019re struggling to maintain boundaries or experiencing burnout, your company\\u2019s EAP can provide guidance, resources, or counseling.\\n- **Talk to Management:** Discuss your workload or boundaries with your supervisor if you need adjustments.\\n\\n---\\n\\nIf you find these strategies aren\\u2019t enough, or you\\u2019re experiencing high stress, anxiety, or burnout, please reach out to a mental health professional or use your organization\\u2019s EAP for confidential support. Your well-being is important!\\n\\nIf you\\u2019d like, I can share more resources or help tailor these strategies to your situation.\", \"tool_calls\": \"\"}"
+            }
+          ],
+          "output": [
+            {
+              "role": "assistant",
+              "content": "{\n  \"reasoning\": \"The assistant provided a comprehensive set of practical strategies for setting boundaries between work and personal life, fully addressing the user's request without going off-scope. The response adhered to universal safety and privacy defaults; no sensitive information was included or safety violations occurred. There were no claims of external actions or tool use, and the procedural requirements were met as there were no additional workflows or tools required for this task. The response is complete, appropriate, and usable for the user's goal.\",\n  \"flagged\": false\n}"
+            }
+          ]
+        },
+        "type": "azure_ai_evaluator",
+        "metric": "task_adherence",
+        "label": "pass",
+        "reason": "The assistant provided a comprehensive set of practical strategies for setting boundaries between work and personal life, fully addressing the user's request without going off-scope. The response adhered to universal safety and privacy defaults; no sensitive information was included or safety violations occurred. There were no claims of external actions or tool use, and the procedural requirements were met as there were no additional workflows or tools required for this task. The response is complete, appropriate, and usable for the user's goal.",
+        "threshold": 0
+      },
+      {
+        "name": "Intent Resolution",
+        "passed": true,
+        "score": 5.0,
+        "sample": {
+          "usage": {
+            "prompt_tokens": 2346,
+            "completion_tokens": 65,
+            "total_tokens": 2411
+          },
+          "finish_reason": "stop",
+          "model": "gpt-4.1-2025-04-14",
+          "input": [
+            {
+              "role": "user",
+              "content": "{\"query\": \"How do I set better boundaries between work and personal life?\", \"response\": \"Setting healthy boundaries is crucial for maintaining a positive work-life balance and supporting your mental well-being. Here are some practical tips:\\n\\n### 1. **Define Clear Working Hours**\\n- **Set Start and End Times:** Decide when your workday begins and ends, and stick to these times as much as possible.\\n- **Communicate Availability:** Let your team or clients know your working hours so they can respect your boundaries.\\n\\n### 2. **Create a Dedicated Workspace**\\n- **Physical Separation:** If possible, work in a specific area of your home or office that\\u2019s used solely for work. This helps signal when you\\u2019re \\u201cat work\\u201d and when you\\u2019re off the clock.\\n- **Clean-Up Ritual:** When finished, tidy your workspace or turn off your equipment to help mentally shift out of work mode.\\n\\n### 3. **Establish Technology Boundaries**\\n- **Turn Off Notifications:** Silence work-related apps and email notifications after hours.\\n- **Use Separate Devices:** If feasible, keep separate devices or user accounts for work and personal use.\\n\\n### 4. **Prioritize Self-Care**\\n- **Schedule Breaks:** Block off time on your calendar for lunch and short breaks. Physical movement and mental pauses are essential.\\n- **Time for Hobbies and Loved Ones:** Protect time for family, friends, and activities you enjoy.\\n\\n### 5. **Learn to Say No**\\n- **Assess Requests:** If you\\u2019re feeling overwhelmed, it\\u2019s okay to decline extra tasks or propose more reasonable deadlines.\\n- **Be Honest:** Communicate openly if you\\u2019re unable to take on additional work without sacrificing quality or well-being.\\n\\n### 6. **Seek Support**\\n- **Employee Assistance Programs (EAP):** If you\\u2019re struggling to maintain boundaries or experiencing burnout, your company\\u2019s EAP can provide guidance, resources, or counseling.\\n- **Talk to Management:** Discuss your workload or boundaries with your supervisor if you need adjustments.\\n\\n---\\n\\nIf you find these strategies aren\\u2019t enough, or you\\u2019re experiencing high stress, anxiety, or burnout, please reach out to a mental health professional or use your organization\\u2019s EAP for confidential support. Your well-being is important!\\n\\nIf you\\u2019d like, I can share more resources or help tailor these strategies to your situation.\", \"tool_definitions\": null}"
+            }
+          ],
+          "output": [
+            {
+              "role": "assistant",
+              "content": "{\n  \"explanation\": \"The user wanted advice on setting better boundaries between work and personal life. The agent provided a thorough, well-structured list of practical strategies, addressed mental well-being, and offered further help, fully resolving the user's intent with relevant and actionable guidance.\",\n  \"score\": 5\n}"
+            }
+          ]
+        },
+        "type": "azure_ai_evaluator",
+        "metric": "intent_resolution",
+        "label": "pass",
+        "reason": "The user wanted advice on setting better boundaries between work and personal life. The agent provided a thorough, well-structured list of practical strategies, addressed mental well-being, and offered further help, fully resolving the user's intent with relevant and actionable guidance.",
+        "threshold": 3
+      }
+    ],
+    "run_id": "evalrun_c4999a4012f146c48d09bbbe8cee1b5e",
+    "sample": {
+      "error": null,
+      "finish_reason": "stop",
+      "input": [
+        {
+          "content": "{\"query\": \"How do I set better boundaries between work and personal life?\", \"response\": \"Setting healthy boundaries is crucial for maintaining a positive work-life balance and supporting your mental well-being. Here are some practical tips:\\n\\n### 1. **Define Clear Working Hours**\\n- **Set Start and End Times:** Decide when your workday begins and ends, and stick to these times as much as possible.\\n- **Communicate Availability:** Let your team or clients know your working hours so they can respect your boundaries.\\n\\n### 2. **Create a Dedicated Workspace**\\n- **Physical Separation:** If possible, work in a specific area of your home or office that\\u2019s used solely for work. This helps signal when you\\u2019re \\u201cat work\\u201d and when you\\u2019re off the clock.\\n- **Clean-Up Ritual:** When finished, tidy your workspace or turn off your equipment to help mentally shift out of work mode.\\n\\n### 3. **Establish Technology Boundaries**\\n- **Turn Off Notifications:** Silence work-related apps and email notifications after hours.\\n- **Use Separate Devices:** If feasible, keep separate devices or user accounts for work and personal use.\\n\\n### 4. **Prioritize Self-Care**\\n- **Schedule Breaks:** Block off time on your calendar for lunch and short breaks. Physical movement and mental pauses are essential.\\n- **Time for Hobbies and Loved Ones:** Protect time for family, friends, and activities you enjoy.\\n\\n### 5. **Learn to Say No**\\n- **Assess Requests:** If you\\u2019re feeling overwhelmed, it\\u2019s okay to decline extra tasks or propose more reasonable deadlines.\\n- **Be Honest:** Communicate openly if you\\u2019re unable to take on additional work without sacrificing quality or well-being.\\n\\n### 6. **Seek Support**\\n- **Employee Assistance Programs (EAP):** If you\\u2019re struggling to maintain boundaries or experiencing burnout, your company\\u2019s EAP can provide guidance, resources, or counseling.\\n- **Talk to Management:** Discuss your workload or boundaries with your supervisor if you need adjustments.\\n\\n---\\n\\nIf you find these strategies aren\\u2019t enough, or you\\u2019re experiencing high stress, anxiety, or burnout, please reach out to a mental health professional or use your organization\\u2019s EAP for confidential support. Your well-being is important!\\n\\nIf you\\u2019d like, I can share more resources or help tailor these strategies to your situation.\", \"tool_definitions\": null}",
+          "role": "user"
+        }
+      ],
+      "max_completion_tokens": null,
+      "model": "gpt-4.1-2025-04-14",
+      "output": [
+        {
+          "content": "{\n  \"explanation\": \"The user wanted advice on setting better boundaries between work and personal life. The agent provided a thorough, well-structured list of practical strategies, addressed mental well-being, and offered further help, fully resolving the user's intent with relevant and actionable guidance.\",\n  \"score\": 5\n}",
+          "role": "assistant"
+        }
+      ],
+      "seed": null,
+      "temperature": null,
+      "top_p": null,
+      "usage": {
+        "cached_tokens": null,
+        "completion_tokens": 65,
+        "prompt_tokens": 2346,
+        "total_tokens": 2411
+      }
+    },
+    "status": "completed"
+  },
+  {
+    "id": "7",
+    "created_at": 1773785168,
+    "datasource_item": {
+      "query": "What are the signs of workplace burnout?",
+      "sample.output_text": "**Workplace burnout** is a state of chronic physical and emotional exhaustion, often caused by prolonged stress at work. Recognizing the signs early can help prevent more serious health issues. Here are common symptoms to watch for:\n\n### Emotional Signs:\n- **Feeling drained, overwhelmed, or emotionally exhausted**\n- **Increased irritability or mood swings**\n- **Loss of motivation or enthusiasm for your job**\n- **Cynicism or negative attitude towards work or colleagues**\n- **Feeling detached or isolated from your workplace or team**\n\n### Physical Signs:\n- **Chronic fatigue or low energy, even after rest**\n- **Frequent headaches or muscle pain**\n- **Changes in sleep habits (insomnia or oversleeping)**\n- **More frequent illnesses due to reduced immunity**\n\n### Behavioral Signs:\n- **Decreased performance or productivity**\n- **Procrastination or trouble concentrating**\n- **Withdrawing from responsibilities or social interactions**\n- **Increased use of alcohol or other substances to cope**\n\n### What to Do:\n- **Talk to Someone:** Speak with a supervisor, HR, or a trusted colleague about your feelings.\n- **Utilize Employee Assistance Programs (EAP):** Many organizations offer confidential counseling and support resources.\n- **Set Boundaries:** Try to maintain clear boundaries between work and personal life.\n- **Take Regular Breaks:** Short, frequent breaks can help maintain energy and focus.\n- **Seek Professional Help:** If symptoms persist or worsen, consider reaching out to a mental health professional.\n\nIf you think you may be experiencing burnout, please don\u2019t hesitate to use your workplace\u2019s support resources, and consult with a healthcare provider or counselor for professional advice. Your well-being is important!",
+      "response_id": "resp_5047d4af538d49b90069b9d012b3148190b28ce99a2cc1dcdb",
+      "agent_id": "employee-wellness-advisor:1",
+      "agent_name": "employee-wellness-advisor",
+      "agent_version": "1",
+      "conversation_id": "conv_5047d4af538d49b900FHDY8Gzrz493mxvmbXQvQAz84ywCvlRw",
+      "previous_response_id": null,
+      "sample.tool_calls": [],
+      "sample.tool_definitions": [],
+      "sample.output_items": [
+        {
+          "role": "system",
+          "content": "You are an employee wellness advisor. Provide guidance on work-life balance, stress management, ergonomic setups, and available employee assistance programs. Be supportive and always recommend professional resources for health concerns."
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "annotations": [],
+              "text": "**Workplace burnout** is a state of chronic physical and emotional exhaustion, often caused by prolonged stress at work. Recognizing the signs early can help prevent more serious health issues. Here are common symptoms to watch for:\n\n### Emotional Signs:\n- **Feeling drained, overwhelmed, or emotionally exhausted**\n- **Increased irritability or mood swings**\n- **Loss of motivation or enthusiasm for your job**\n- **Cynicism or negative attitude towards work or colleagues**\n- **Feeling detached or isolated from your workplace or team**\n\n### Physical Signs:\n- **Chronic fatigue or low energy, even after rest**\n- **Frequent headaches or muscle pain**\n- **Changes in sleep habits (insomnia or oversleeping)**\n- **More frequent illnesses due to reduced immunity**\n\n### Behavioral Signs:\n- **Decreased performance or productivity**\n- **Procrastination or trouble concentrating**\n- **Withdrawing from responsibilities or social interactions**\n- **Increased use of alcohol or other substances to cope**\n\n### What to Do:\n- **Talk to Someone:** Speak with a supervisor, HR, or a trusted colleague about your feelings.\n- **Utilize Employee Assistance Programs (EAP):** Many organizations offer confidential counseling and support resources.\n- **Set Boundaries:** Try to maintain clear boundaries between work and personal life.\n- **Take Regular Breaks:** Short, frequent breaks can help maintain energy and focus.\n- **Seek Professional Help:** If symptoms persist or worsen, consider reaching out to a mental health professional.\n\nIf you think you may be experiencing burnout, please don\u2019t hesitate to use your workplace\u2019s support resources, and consult with a healthcare provider or counselor for professional advice. Your well-being is important!",
+              "type": "output_text",
+              "logprobs": []
+            }
+          ]
+        }
+      ],
+      "sample.output_status": {
+        "status": "success",
+        "message": ""
+      },
+      "sample.output_status.status": "success",
+      "sample.output_status.message": ""
+    },
+    "datasource_item_id": 6,
+    "eval_id": "eval_0191d3c57a8a4d00922f73ccda245bc0",
+    "object": "eval.run.output_item",
+    "results": [
+      {
+        "name": "Task Adherence",
+        "passed": true,
+        "score": 1.0,
+        "sample": {
+          "usage": {
+            "prompt_tokens": 1656,
+            "completion_tokens": 99,
+            "total_tokens": 1755
+          },
+          "finish_reason": "stop",
+          "model": "gpt-4.1-2025-04-14",
+          "input": [
+            {
+              "role": "user",
+              "content": "{\"system_message\": \"\", \"query\": \"What are the signs of workplace burnout?\", \"response\": \"**Workplace burnout** is a state of chronic physical and emotional exhaustion, often caused by prolonged stress at work. Recognizing the signs early can help prevent more serious health issues. Here are common symptoms to watch for:\\n\\n### Emotional Signs:\\n- **Feeling drained, overwhelmed, or emotionally exhausted**\\n- **Increased irritability or mood swings**\\n- **Loss of motivation or enthusiasm for your job**\\n- **Cynicism or negative attitude towards work or colleagues**\\n- **Feeling detached or isolated from your workplace or team**\\n\\n### Physical Signs:\\n- **Chronic fatigue or low energy, even after rest**\\n- **Frequent headaches or muscle pain**\\n- **Changes in sleep habits (insomnia or oversleeping)**\\n- **More frequent illnesses due to reduced immunity**\\n\\n### Behavioral Signs:\\n- **Decreased performance or productivity**\\n- **Procrastination or trouble concentrating**\\n- **Withdrawing from responsibilities or social interactions**\\n- **Increased use of alcohol or other substances to cope**\\n\\n### What to Do:\\n- **Talk to Someone:** Speak with a supervisor, HR, or a trusted colleague about your feelings.\\n- **Utilize Employee Assistance Programs (EAP):** Many organizations offer confidential counseling and support resources.\\n- **Set Boundaries:** Try to maintain clear boundaries between work and personal life.\\n- **Take Regular Breaks:** Short, frequent breaks can help maintain energy and focus.\\n- **Seek Professional Help:** If symptoms persist or worsen, consider reaching out to a mental health professional.\\n\\nIf you think you may be experiencing burnout, please don\\u2019t hesitate to use your workplace\\u2019s support resources, and consult with a healthcare provider or counselor for professional advice. Your well-being is important!\", \"tool_calls\": \"\"}"
+            }
+          ],
+          "output": [
+            {
+              "role": "assistant",
+              "content": "{\n  \"reasoning\": \"The assistant provided a thorough and accurate overview of the signs of workplace burnout, divided into emotional, physical, and behavioral symptoms. The information directly addresses the user's request, includes actionable advice, and does not introduce unrelated or unsafe content. There are no constraints or required formats that were violated, and no external tool interactions were claimed or required. The response fully aligns with the user's objective and maintains appropriate safety and procedural standards.\",\n  \"flagged\": false\n}"
+            }
+          ]
+        },
+        "type": "azure_ai_evaluator",
+        "metric": "task_adherence",
+        "label": "pass",
+        "reason": "The assistant provided a thorough and accurate overview of the signs of workplace burnout, divided into emotional, physical, and behavioral symptoms. The information directly addresses the user's request, includes actionable advice, and does not introduce unrelated or unsafe content. There are no constraints or required formats that were violated, and no external tool interactions were claimed or required. The response fully aligns with the user's objective and maintains appropriate safety and procedural standards.",
+        "threshold": 0
+      },
+      {
+        "name": "Intent Resolution",
+        "passed": true,
+        "score": 5.0,
+        "sample": {
+          "usage": {
+            "prompt_tokens": 2228,
+            "completion_tokens": 67,
+            "total_tokens": 2295
+          },
+          "finish_reason": "stop",
+          "model": "gpt-4.1-2025-04-14",
+          "input": [
+            {
+              "role": "user",
+              "content": "{\"query\": \"What are the signs of workplace burnout?\", \"response\": \"**Workplace burnout** is a state of chronic physical and emotional exhaustion, often caused by prolonged stress at work. Recognizing the signs early can help prevent more serious health issues. Here are common symptoms to watch for:\\n\\n### Emotional Signs:\\n- **Feeling drained, overwhelmed, or emotionally exhausted**\\n- **Increased irritability or mood swings**\\n- **Loss of motivation or enthusiasm for your job**\\n- **Cynicism or negative attitude towards work or colleagues**\\n- **Feeling detached or isolated from your workplace or team**\\n\\n### Physical Signs:\\n- **Chronic fatigue or low energy, even after rest**\\n- **Frequent headaches or muscle pain**\\n- **Changes in sleep habits (insomnia or oversleeping)**\\n- **More frequent illnesses due to reduced immunity**\\n\\n### Behavioral Signs:\\n- **Decreased performance or productivity**\\n- **Procrastination or trouble concentrating**\\n- **Withdrawing from responsibilities or social interactions**\\n- **Increased use of alcohol or other substances to cope**\\n\\n### What to Do:\\n- **Talk to Someone:** Speak with a supervisor, HR, or a trusted colleague about your feelings.\\n- **Utilize Employee Assistance Programs (EAP):** Many organizations offer confidential counseling and support resources.\\n- **Set Boundaries:** Try to maintain clear boundaries between work and personal life.\\n- **Take Regular Breaks:** Short, frequent breaks can help maintain energy and focus.\\n- **Seek Professional Help:** If symptoms persist or worsen, consider reaching out to a mental health professional.\\n\\nIf you think you may be experiencing burnout, please don\\u2019t hesitate to use your workplace\\u2019s support resources, and consult with a healthcare provider or counselor for professional advice. Your well-being is important!\", \"tool_definitions\": null}"
+            }
+          ],
+          "output": [
+            {
+              "role": "assistant",
+              "content": "{\n  \"explanation\": \"The user asked for the signs of workplace burnout. The agent provided a thorough, well-organized list of emotional, physical, and behavioral signs, along with practical next steps and resources. The response is accurate, complete, and directly fulfills the user's intent.\",\n  \"score\": 5\n}"
+            }
+          ]
+        },
+        "type": "azure_ai_evaluator",
+        "metric": "intent_resolution",
+        "label": "pass",
+        "reason": "The user asked for the signs of workplace burnout. The agent provided a thorough, well-organized list of emotional, physical, and behavioral signs, along with practical next steps and resources. The response is accurate, complete, and directly fulfills the user's intent.",
+        "threshold": 3
+      }
+    ],
+    "run_id": "evalrun_c4999a4012f146c48d09bbbe8cee1b5e",
+    "sample": {
+      "error": null,
+      "finish_reason": "stop",
+      "input": [
+        {
+          "content": "{\"query\": \"What are the signs of workplace burnout?\", \"response\": \"**Workplace burnout** is a state of chronic physical and emotional exhaustion, often caused by prolonged stress at work. Recognizing the signs early can help prevent more serious health issues. Here are common symptoms to watch for:\\n\\n### Emotional Signs:\\n- **Feeling drained, overwhelmed, or emotionally exhausted**\\n- **Increased irritability or mood swings**\\n- **Loss of motivation or enthusiasm for your job**\\n- **Cynicism or negative attitude towards work or colleagues**\\n- **Feeling detached or isolated from your workplace or team**\\n\\n### Physical Signs:\\n- **Chronic fatigue or low energy, even after rest**\\n- **Frequent headaches or muscle pain**\\n- **Changes in sleep habits (insomnia or oversleeping)**\\n- **More frequent illnesses due to reduced immunity**\\n\\n### Behavioral Signs:\\n- **Decreased performance or productivity**\\n- **Procrastination or trouble concentrating**\\n- **Withdrawing from responsibilities or social interactions**\\n- **Increased use of alcohol or other substances to cope**\\n\\n### What to Do:\\n- **Talk to Someone:** Speak with a supervisor, HR, or a trusted colleague about your feelings.\\n- **Utilize Employee Assistance Programs (EAP):** Many organizations offer confidential counseling and support resources.\\n- **Set Boundaries:** Try to maintain clear boundaries between work and personal life.\\n- **Take Regular Breaks:** Short, frequent breaks can help maintain energy and focus.\\n- **Seek Professional Help:** If symptoms persist or worsen, consider reaching out to a mental health professional.\\n\\nIf you think you may be experiencing burnout, please don\\u2019t hesitate to use your workplace\\u2019s support resources, and consult with a healthcare provider or counselor for professional advice. Your well-being is important!\", \"tool_definitions\": null}",
+          "role": "user"
+        }
+      ],
+      "max_completion_tokens": null,
+      "model": "gpt-4.1-2025-04-14",
+      "output": [
+        {
+          "content": "{\n  \"explanation\": \"The user asked for the signs of workplace burnout. The agent provided a thorough, well-organized list of emotional, physical, and behavioral signs, along with practical next steps and resources. The response is accurate, complete, and directly fulfills the user's intent.\",\n  \"score\": 5\n}",
+          "role": "assistant"
+        }
+      ],
+      "seed": null,
+      "temperature": null,
+      "top_p": null,
+      "usage": {
+        "cached_tokens": null,
+        "completion_tokens": 67,
+        "prompt_tokens": 2228,
+        "total_tokens": 2295
+      }
+    },
+    "status": "completed"
+  },
+  {
+    "id": "8",
+    "created_at": 1773785168,
+    "datasource_item": {
+      "query": "How can I talk to my manager about feeling overwhelmed?",
+      "sample.output_text": "Talking to your manager about feeling overwhelmed is an important step toward managing stress and maintaining your well-being. Here are some supportive steps to help you approach this conversation:\n\n### 1. **Prepare Ahead**\n- **Reflect on Specific Tasks:** Identify which tasks or situations are making you feel overwhelmed.\n- **Consider Solutions:** Think about what changes might help, such as adjusting deadlines, prioritizing tasks, or additional support.\n\n### 2. **Choose the Right Time**\n- Request a private meeting rather than bringing it up when your manager is busy or distracted.\n\n### 3. **Be Honest and Fact-Based**\n- Clearly describe how your workload is affecting your productivity, well-being, or work quality.\n- Use examples: \u201cI\u2019ve been working late most nights to keep up with project deadlines, and it\u2019s starting to impact my energy and focus.\u201d\n\n### 4. **Focus on Collaboration**\n- Express your commitment to your work and the team.\n- Ask for their input: \u201cI want to deliver my best work. Can we review my priorities together and see if there are ways I can manage the current workload more effectively?\u201d\n\n### 5. **Be Open to Solutions**\n- You might discuss redistributing tasks, shifting deadlines, or getting temporary support.\n\n### 6. **Follow Up**\n- Summarize any action points after your meeting and check in periodically on progress and well-being.\n\n### 7. **Utilize Company Resources**\n- Many organizations offer Employee Assistance Programs (EAPs) that provide free, confidential counseling and support with stress management and communication strategies.\n- Consider accessing these services for additional professional guidance.\n\n---\n\n**Remember:**  \nFeeling overwhelmed is common at times, and reaching out for help is a sign of professionalism and self-awareness, not weakness.  \nIf you feel your mental or physical health is significantly affected, please consult a healthcare professional.\n\nWould you like tips on preparing for the conversation or resources through your company\u2019s EAP?",
+      "response_id": "resp_2317d93cd31f90610069b9d01f58dc8190819d8b21e41d10b1",
+      "agent_id": "employee-wellness-advisor:1",
+      "agent_name": "employee-wellness-advisor",
+      "agent_version": "1",
+      "conversation_id": "conv_2317d93cd31f906100oi44kdezNgKJRSexmfA8K1vnXJOTCrAg",
+      "previous_response_id": null,
+      "sample.tool_calls": [],
+      "sample.tool_definitions": [],
+      "sample.output_items": [
+        {
+          "role": "system",
+          "content": "You are an employee wellness advisor. Provide guidance on work-life balance, stress management, ergonomic setups, and available employee assistance programs. Be supportive and always recommend professional resources for health concerns."
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "annotations": [],
+              "text": "Talking to your manager about feeling overwhelmed is an important step toward managing stress and maintaining your well-being. Here are some supportive steps to help you approach this conversation:\n\n### 1. **Prepare Ahead**\n- **Reflect on Specific Tasks:** Identify which tasks or situations are making you feel overwhelmed.\n- **Consider Solutions:** Think about what changes might help, such as adjusting deadlines, prioritizing tasks, or additional support.\n\n### 2. **Choose the Right Time**\n- Request a private meeting rather than bringing it up when your manager is busy or distracted.\n\n### 3. **Be Honest and Fact-Based**\n- Clearly describe how your workload is affecting your productivity, well-being, or work quality.\n- Use examples: \u201cI\u2019ve been working late most nights to keep up with project deadlines, and it\u2019s starting to impact my energy and focus.\u201d\n\n### 4. **Focus on Collaboration**\n- Express your commitment to your work and the team.\n- Ask for their input: \u201cI want to deliver my best work. Can we review my priorities together and see if there are ways I can manage the current workload more effectively?\u201d\n\n### 5. **Be Open to Solutions**\n- You might discuss redistributing tasks, shifting deadlines, or getting temporary support.\n\n### 6. **Follow Up**\n- Summarize any action points after your meeting and check in periodically on progress and well-being.\n\n### 7. **Utilize Company Resources**\n- Many organizations offer Employee Assistance Programs (EAPs) that provide free, confidential counseling and support with stress management and communication strategies.\n- Consider accessing these services for additional professional guidance.\n\n---\n\n**Remember:**  \nFeeling overwhelmed is common at times, and reaching out for help is a sign of professionalism and self-awareness, not weakness.  \nIf you feel your mental or physical health is significantly affected, please consult a healthcare professional.\n\nWould you like tips on preparing for the conversation or resources through your company\u2019s EAP?",
+              "type": "output_text",
+              "logprobs": []
+            }
+          ]
+        }
+      ],
+      "sample.output_status": {
+        "status": "success",
+        "message": ""
+      },
+      "sample.output_status.status": "success",
+      "sample.output_status.message": ""
+    },
+    "datasource_item_id": 7,
+    "eval_id": "eval_0191d3c57a8a4d00922f73ccda245bc0",
+    "object": "eval.run.output_item",
+    "results": [
+      {
+        "name": "Task Adherence",
+        "passed": true,
+        "score": 1.0,
+        "sample": {
+          "usage": {
+            "prompt_tokens": 1710,
+            "completion_tokens": 115,
+            "total_tokens": 1825
+          },
+          "finish_reason": "stop",
+          "model": "gpt-4.1-2025-04-14",
+          "input": [
+            {
+              "role": "user",
+              "content": "{\"system_message\": \"\", \"query\": \"How can I talk to my manager about feeling overwhelmed?\", \"response\": \"Talking to your manager about feeling overwhelmed is an important step toward managing stress and maintaining your well-being. Here are some supportive steps to help you approach this conversation:\\n\\n### 1. **Prepare Ahead**\\n- **Reflect on Specific Tasks:** Identify which tasks or situations are making you feel overwhelmed.\\n- **Consider Solutions:** Think about what changes might help, such as adjusting deadlines, prioritizing tasks, or additional support.\\n\\n### 2. **Choose the Right Time**\\n- Request a private meeting rather than bringing it up when your manager is busy or distracted.\\n\\n### 3. **Be Honest and Fact-Based**\\n- Clearly describe how your workload is affecting your productivity, well-being, or work quality.\\n- Use examples: \\u201cI\\u2019ve been working late most nights to keep up with project deadlines, and it\\u2019s starting to impact my energy and focus.\\u201d\\n\\n### 4. **Focus on Collaboration**\\n- Express your commitment to your work and the team.\\n- Ask for their input: \\u201cI want to deliver my best work. Can we review my priorities together and see if there are ways I can manage the current workload more effectively?\\u201d\\n\\n### 5. **Be Open to Solutions**\\n- You might discuss redistributing tasks, shifting deadlines, or getting temporary support.\\n\\n### 6. **Follow Up**\\n- Summarize any action points after your meeting and check in periodically on progress and well-being.\\n\\n### 7. **Utilize Company Resources**\\n- Many organizations offer Employee Assistance Programs (EAPs) that provide free, confidential counseling and support with stress management and communication strategies.\\n- Consider accessing these services for additional professional guidance.\\n\\n---\\n\\n**Remember:**  \\nFeeling overwhelmed is common at times, and reaching out for help is a sign of professionalism and self-awareness, not weakness.  \\nIf you feel your mental or physical health is significantly affected, please consult a healthcare professional.\\n\\nWould you like tips on preparing for the conversation or resources through your company\\u2019s EAP?\", \"tool_calls\": \"\"}"
+            }
+          ],
+          "output": [
+            {
+              "role": "assistant",
+              "content": "{\n  \"reasoning\": \"The assistant provided a clear and relevant set of steps for talking to a manager about feeling overwhelmed, directly aligning with the user's request. The response is focused, actionable, and contains supportive language, without veering off-topic or introducing any harmful, private, or unauthorized content. There are no presentation or workflow constraints or required sequences that were violated, and there are no real-world actions claimed beyond the user seeking advice in conversation. All elements are complete and appropriate, with no material omissions or procedural errors.\",\n  \"flagged\": false\n}"
+            }
+          ]
+        },
+        "type": "azure_ai_evaluator",
+        "metric": "task_adherence",
+        "label": "pass",
+        "reason": "The assistant provided a clear and relevant set of steps for talking to a manager about feeling overwhelmed, directly aligning with the user's request. The response is focused, actionable, and contains supportive language, without veering off-topic or introducing any harmful, private, or unauthorized content. There are no presentation or workflow constraints or required sequences that were violated, and there are no real-world actions claimed beyond the user seeking advice in conversation. All elements are complete and appropriate, with no material omissions or procedural errors.",
+        "threshold": 0
+      },
+      {
+        "name": "Intent Resolution",
+        "passed": true,
+        "score": 5.0,
+        "sample": {
+          "usage": {
+            "prompt_tokens": 2282,
+            "completion_tokens": 63,
+            "total_tokens": 2345
+          },
+          "finish_reason": "stop",
+          "model": "gpt-4.1-2025-04-14",
+          "input": [
+            {
+              "role": "user",
+              "content": "{\"query\": \"How can I talk to my manager about feeling overwhelmed?\", \"response\": \"Talking to your manager about feeling overwhelmed is an important step toward managing stress and maintaining your well-being. Here are some supportive steps to help you approach this conversation:\\n\\n### 1. **Prepare Ahead**\\n- **Reflect on Specific Tasks:** Identify which tasks or situations are making you feel overwhelmed.\\n- **Consider Solutions:** Think about what changes might help, such as adjusting deadlines, prioritizing tasks, or additional support.\\n\\n### 2. **Choose the Right Time**\\n- Request a private meeting rather than bringing it up when your manager is busy or distracted.\\n\\n### 3. **Be Honest and Fact-Based**\\n- Clearly describe how your workload is affecting your productivity, well-being, or work quality.\\n- Use examples: \\u201cI\\u2019ve been working late most nights to keep up with project deadlines, and it\\u2019s starting to impact my energy and focus.\\u201d\\n\\n### 4. **Focus on Collaboration**\\n- Express your commitment to your work and the team.\\n- Ask for their input: \\u201cI want to deliver my best work. Can we review my priorities together and see if there are ways I can manage the current workload more effectively?\\u201d\\n\\n### 5. **Be Open to Solutions**\\n- You might discuss redistributing tasks, shifting deadlines, or getting temporary support.\\n\\n### 6. **Follow Up**\\n- Summarize any action points after your meeting and check in periodically on progress and well-being.\\n\\n### 7. **Utilize Company Resources**\\n- Many organizations offer Employee Assistance Programs (EAPs) that provide free, confidential counseling and support with stress management and communication strategies.\\n- Consider accessing these services for additional professional guidance.\\n\\n---\\n\\n**Remember:**  \\nFeeling overwhelmed is common at times, and reaching out for help is a sign of professionalism and self-awareness, not weakness.  \\nIf you feel your mental or physical health is significantly affected, please consult a healthcare professional.\\n\\nWould you like tips on preparing for the conversation or resources through your company\\u2019s EAP?\", \"tool_definitions\": null}"
+            }
+          ],
+          "output": [
+            {
+              "role": "assistant",
+              "content": "{\n  \"explanation\": \"The user wanted advice on how to talk to their manager about feeling overwhelmed. The agent provided a thorough, step-by-step guide, including preparation, communication strategies, and follow-up, fully resolving the user's intent with relevant and actionable advice.\",\n  \"score\": 5\n}"
+            }
+          ]
+        },
+        "type": "azure_ai_evaluator",
+        "metric": "intent_resolution",
+        "label": "pass",
+        "reason": "The user wanted advice on how to talk to their manager about feeling overwhelmed. The agent provided a thorough, step-by-step guide, including preparation, communication strategies, and follow-up, fully resolving the user's intent with relevant and actionable advice.",
+        "threshold": 3
+      }
+    ],
+    "run_id": "evalrun_c4999a4012f146c48d09bbbe8cee1b5e",
+    "sample": {
+      "error": null,
+      "finish_reason": "stop",
+      "input": [
+        {
+          "content": "{\"query\": \"How can I talk to my manager about feeling overwhelmed?\", \"response\": \"Talking to your manager about feeling overwhelmed is an important step toward managing stress and maintaining your well-being. Here are some supportive steps to help you approach this conversation:\\n\\n### 1. **Prepare Ahead**\\n- **Reflect on Specific Tasks:** Identify which tasks or situations are making you feel overwhelmed.\\n- **Consider Solutions:** Think about what changes might help, such as adjusting deadlines, prioritizing tasks, or additional support.\\n\\n### 2. **Choose the Right Time**\\n- Request a private meeting rather than bringing it up when your manager is busy or distracted.\\n\\n### 3. **Be Honest and Fact-Based**\\n- Clearly describe how your workload is affecting your productivity, well-being, or work quality.\\n- Use examples: \\u201cI\\u2019ve been working late most nights to keep up with project deadlines, and it\\u2019s starting to impact my energy and focus.\\u201d\\n\\n### 4. **Focus on Collaboration**\\n- Express your commitment to your work and the team.\\n- Ask for their input: \\u201cI want to deliver my best work. Can we review my priorities together and see if there are ways I can manage the current workload more effectively?\\u201d\\n\\n### 5. **Be Open to Solutions**\\n- You might discuss redistributing tasks, shifting deadlines, or getting temporary support.\\n\\n### 6. **Follow Up**\\n- Summarize any action points after your meeting and check in periodically on progress and well-being.\\n\\n### 7. **Utilize Company Resources**\\n- Many organizations offer Employee Assistance Programs (EAPs) that provide free, confidential counseling and support with stress management and communication strategies.\\n- Consider accessing these services for additional professional guidance.\\n\\n---\\n\\n**Remember:**  \\nFeeling overwhelmed is common at times, and reaching out for help is a sign of professionalism and self-awareness, not weakness.  \\nIf you feel your mental or physical health is significantly affected, please consult a healthcare professional.\\n\\nWould you like tips on preparing for the conversation or resources through your company\\u2019s EAP?\", \"tool_definitions\": null}",
+          "role": "user"
+        }
+      ],
+      "max_completion_tokens": null,
+      "model": "gpt-4.1-2025-04-14",
+      "output": [
+        {
+          "content": "{\n  \"explanation\": \"The user wanted advice on how to talk to their manager about feeling overwhelmed. The agent provided a thorough, step-by-step guide, including preparation, communication strategies, and follow-up, fully resolving the user's intent with relevant and actionable advice.\",\n  \"score\": 5\n}",
+          "role": "assistant"
+        }
+      ],
+      "seed": null,
+      "temperature": null,
+      "top_p": null,
+      "usage": {
+        "cached_tokens": null,
+        "completion_tokens": 63,
+        "prompt_tokens": 2282,
+        "total_tokens": 2345
+      }
+    },
+    "status": "completed"
+  },
+  {
+    "id": "9",
+    "created_at": 1773785168,
+    "datasource_item": {
+      "query": "Are there any mindfulness resources the company offers?",
+      "sample.output_text": "Absolutely! Many companies provide mindfulness resources to support employee well-being. While the exact offerings may vary by organization, common resources include:\n\n1. **Mindfulness & Meditation Apps:** Check if your company provides free access or discounts to apps like Headspace, Calm, or Insight Timer.\n\n2. **Guided Meditation Sessions:** Some organizations offer live or recorded online guided sessions during lunch breaks or after work. Check your internal wellness portal or HR newsletters for schedules.\n\n3. **Workshops & Webinars:** Look for virtual workshops on topics such as mindfulness at work, stress reduction, or self-care techniques.\n\n4. **Employee Assistance Program (EAP):** Most EAPs include access to mindfulness resources, resilience training, or referrals to licensed counselors for one-on-one support.\n\n5. **Mindfulness Groups or Communities:** Some companies have employee resource groups or Slack/Teams channels dedicated to well-being, where mindfulness resources are shared.\n\n**What you can do:**\n- Visit your company\u2019s wellness or employee benefits portal.\n- Inquire with HR or your wellness team about specific mindfulness programs available.\n- Ask your EAP representative for recommendations on mindfulness or mental health support.\n\nIf you have specific health concerns, such as ongoing anxiety or difficulty coping with stress, I encourage you to connect with your EAP or a qualified healthcare provider for personalized support and resources.\n\nLet me know if you need help locating your company\u2019s wellness resources or want tips on starting a personal mindfulness practice!",
+      "response_id": "resp_71072f7a66591de20069b9d02e296481909611984a5b5ea4c2",
+      "agent_id": "employee-wellness-advisor:1",
+      "agent_name": "employee-wellness-advisor",
+      "agent_version": "1",
+      "conversation_id": "conv_71072f7a66591de200WRoW2VGmYjvGiKSzXyYPuzkFy4A6fpVt",
+      "previous_response_id": null,
+      "sample.tool_calls": [],
+      "sample.tool_definitions": [],
+      "sample.output_items": [
+        {
+          "role": "system",
+          "content": "You are an employee wellness advisor. Provide guidance on work-life balance, stress management, ergonomic setups, and available employee assistance programs. Be supportive and always recommend professional resources for health concerns."
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "annotations": [],
+              "text": "Absolutely! Many companies provide mindfulness resources to support employee well-being. While the exact offerings may vary by organization, common resources include:\n\n1. **Mindfulness & Meditation Apps:** Check if your company provides free access or discounts to apps like Headspace, Calm, or Insight Timer.\n\n2. **Guided Meditation Sessions:** Some organizations offer live or recorded online guided sessions during lunch breaks or after work. Check your internal wellness portal or HR newsletters for schedules.\n\n3. **Workshops & Webinars:** Look for virtual workshops on topics such as mindfulness at work, stress reduction, or self-care techniques.\n\n4. **Employee Assistance Program (EAP):** Most EAPs include access to mindfulness resources, resilience training, or referrals to licensed counselors for one-on-one support.\n\n5. **Mindfulness Groups or Communities:** Some companies have employee resource groups or Slack/Teams channels dedicated to well-being, where mindfulness resources are shared.\n\n**What you can do:**\n- Visit your company\u2019s wellness or employee benefits portal.\n- Inquire with HR or your wellness team about specific mindfulness programs available.\n- Ask your EAP representative for recommendations on mindfulness or mental health support.\n\nIf you have specific health concerns, such as ongoing anxiety or difficulty coping with stress, I encourage you to connect with your EAP or a qualified healthcare provider for personalized support and resources.\n\nLet me know if you need help locating your company\u2019s wellness resources or want tips on starting a personal mindfulness practice!",
+              "type": "output_text",
+              "logprobs": []
+            }
+          ]
+        }
+      ],
+      "sample.output_status": {
+        "status": "success",
+        "message": ""
+      },
+      "sample.output_status.status": "success",
+      "sample.output_status.message": ""
+    },
+    "datasource_item_id": 8,
+    "eval_id": "eval_0191d3c57a8a4d00922f73ccda245bc0",
+    "object": "eval.run.output_item",
+    "results": [
+      {
+        "name": "Task Adherence",
+        "passed": true,
+        "score": 1.0,
+        "sample": {
+          "usage": {
+            "prompt_tokens": 1609,
+            "completion_tokens": 133,
+            "total_tokens": 1742
+          },
+          "finish_reason": "stop",
+          "model": "gpt-4.1-2025-04-14",
+          "input": [
+            {
+              "role": "user",
+              "content": "{\"system_message\": \"\", \"query\": \"Are there any mindfulness resources the company offers?\", \"response\": \"Absolutely! Many companies provide mindfulness resources to support employee well-being. While the exact offerings may vary by organization, common resources include:\\n\\n1. **Mindfulness & Meditation Apps:** Check if your company provides free access or discounts to apps like Headspace, Calm, or Insight Timer.\\n\\n2. **Guided Meditation Sessions:** Some organizations offer live or recorded online guided sessions during lunch breaks or after work. Check your internal wellness portal or HR newsletters for schedules.\\n\\n3. **Workshops & Webinars:** Look for virtual workshops on topics such as mindfulness at work, stress reduction, or self-care techniques.\\n\\n4. **Employee Assistance Program (EAP):** Most EAPs include access to mindfulness resources, resilience training, or referrals to licensed counselors for one-on-one support.\\n\\n5. **Mindfulness Groups or Communities:** Some companies have employee resource groups or Slack/Teams channels dedicated to well-being, where mindfulness resources are shared.\\n\\n**What you can do:**\\n- Visit your company\\u2019s wellness or employee benefits portal.\\n- Inquire with HR or your wellness team about specific mindfulness programs available.\\n- Ask your EAP representative for recommendations on mindfulness or mental health support.\\n\\nIf you have specific health concerns, such as ongoing anxiety or difficulty coping with stress, I encourage you to connect with your EAP or a qualified healthcare provider for personalized support and resources.\\n\\nLet me know if you need help locating your company\\u2019s wellness resources or want tips on starting a personal mindfulness practice!\", \"tool_calls\": \"\"}"
+            }
+          ],
+          "output": [
+            {
+              "role": "assistant",
+              "content": "{\n  \"reasoning\": \"The assistant provided a general overview of typical mindfulness resources a company might offer and gave advice on how the user could find specifics for their own company, fulfilling the user's intent to learn about possible resources. While TOOL_CALLS are empty, the assistant did not claim any real-world action or specific company-provided information, and did not imply unverifiable external data. There are no violations of safety, privacy, or presentation constraints, and no procedural failures or misclaiming of external actions. No evidence of missing or off-scope deliverables was found; the advice remains usable for the user.\",\n  \"flagged\": false\n}"
+            }
+          ]
+        },
+        "type": "azure_ai_evaluator",
+        "metric": "task_adherence",
+        "label": "pass",
+        "reason": "The assistant provided a general overview of typical mindfulness resources a company might offer and gave advice on how the user could find specifics for their own company, fulfilling the user's intent to learn about possible resources. While TOOL_CALLS are empty, the assistant did not claim any real-world action or specific company-provided information, and did not imply unverifiable external data. There are no violations of safety, privacy, or presentation constraints, and no procedural failures or misclaiming of external actions. No evidence of missing or off-scope deliverables was found; the advice remains usable for the user.",
+        "threshold": 0
+      },
+      {
+        "name": "Intent Resolution",
+        "passed": true,
+        "score": 4.0,
+        "sample": {
+          "usage": {
+            "prompt_tokens": 2181,
+            "completion_tokens": 67,
+            "total_tokens": 2248
+          },
+          "finish_reason": "stop",
+          "model": "gpt-4.1-2025-04-14",
+          "input": [
+            {
+              "role": "user",
+              "content": "{\"query\": \"Are there any mindfulness resources the company offers?\", \"response\": \"Absolutely! Many companies provide mindfulness resources to support employee well-being. While the exact offerings may vary by organization, common resources include:\\n\\n1. **Mindfulness & Meditation Apps:** Check if your company provides free access or discounts to apps like Headspace, Calm, or Insight Timer.\\n\\n2. **Guided Meditation Sessions:** Some organizations offer live or recorded online guided sessions during lunch breaks or after work. Check your internal wellness portal or HR newsletters for schedules.\\n\\n3. **Workshops & Webinars:** Look for virtual workshops on topics such as mindfulness at work, stress reduction, or self-care techniques.\\n\\n4. **Employee Assistance Program (EAP):** Most EAPs include access to mindfulness resources, resilience training, or referrals to licensed counselors for one-on-one support.\\n\\n5. **Mindfulness Groups or Communities:** Some companies have employee resource groups or Slack/Teams channels dedicated to well-being, where mindfulness resources are shared.\\n\\n**What you can do:**\\n- Visit your company\\u2019s wellness or employee benefits portal.\\n- Inquire with HR or your wellness team about specific mindfulness programs available.\\n- Ask your EAP representative for recommendations on mindfulness or mental health support.\\n\\nIf you have specific health concerns, such as ongoing anxiety or difficulty coping with stress, I encourage you to connect with your EAP or a qualified healthcare provider for personalized support and resources.\\n\\nLet me know if you need help locating your company\\u2019s wellness resources or want tips on starting a personal mindfulness practice!\", \"tool_definitions\": null}"
+            }
+          ],
+          "output": [
+            {
+              "role": "assistant",
+              "content": "{\n  \"explanation\": \"The user asked if their company offers mindfulness resources. The agent provided a thorough overview of typical resources companies offer and gave actionable steps to find out what is available, but did not confirm specifics for the user's company. The response is informative but not fully personalized.\",\n  \"score\": 4\n}"
+            }
+          ]
+        },
+        "type": "azure_ai_evaluator",
+        "metric": "intent_resolution",
+        "label": "pass",
+        "reason": "The user asked if their company offers mindfulness resources. The agent provided a thorough overview of typical resources companies offer and gave actionable steps to find out what is available, but did not confirm specifics for the user's company. The response is informative but not fully personalized.",
+        "threshold": 3
+      }
+    ],
+    "run_id": "evalrun_c4999a4012f146c48d09bbbe8cee1b5e",
+    "sample": {
+      "error": null,
+      "finish_reason": "stop",
+      "input": [
+        {
+          "content": "{\"query\": \"Are there any mindfulness resources the company offers?\", \"response\": \"Absolutely! Many companies provide mindfulness resources to support employee well-being. While the exact offerings may vary by organization, common resources include:\\n\\n1. **Mindfulness & Meditation Apps:** Check if your company provides free access or discounts to apps like Headspace, Calm, or Insight Timer.\\n\\n2. **Guided Meditation Sessions:** Some organizations offer live or recorded online guided sessions during lunch breaks or after work. Check your internal wellness portal or HR newsletters for schedules.\\n\\n3. **Workshops & Webinars:** Look for virtual workshops on topics such as mindfulness at work, stress reduction, or self-care techniques.\\n\\n4. **Employee Assistance Program (EAP):** Most EAPs include access to mindfulness resources, resilience training, or referrals to licensed counselors for one-on-one support.\\n\\n5. **Mindfulness Groups or Communities:** Some companies have employee resource groups or Slack/Teams channels dedicated to well-being, where mindfulness resources are shared.\\n\\n**What you can do:**\\n- Visit your company\\u2019s wellness or employee benefits portal.\\n- Inquire with HR or your wellness team about specific mindfulness programs available.\\n- Ask your EAP representative for recommendations on mindfulness or mental health support.\\n\\nIf you have specific health concerns, such as ongoing anxiety or difficulty coping with stress, I encourage you to connect with your EAP or a qualified healthcare provider for personalized support and resources.\\n\\nLet me know if you need help locating your company\\u2019s wellness resources or want tips on starting a personal mindfulness practice!\", \"tool_definitions\": null}",
+          "role": "user"
+        }
+      ],
+      "max_completion_tokens": null,
+      "model": "gpt-4.1-2025-04-14",
+      "output": [
+        {
+          "content": "{\n  \"explanation\": \"The user asked if their company offers mindfulness resources. The agent provided a thorough overview of typical resources companies offer and gave actionable steps to find out what is available, but did not confirm specifics for the user's company. The response is informative but not fully personalized.\",\n  \"score\": 4\n}",
+          "role": "assistant"
+        }
+      ],
+      "seed": null,
+      "temperature": null,
+      "top_p": null,
+      "usage": {
+        "cached_tokens": null,
+        "completion_tokens": 67,
+        "prompt_tokens": 2181,
+        "total_tokens": 2248
+      }
+    },
+    "status": "completed"
+  },
+  {
+    "id": "10",
+    "created_at": 1773785168,
+    "datasource_item": {
+      "query": "What should I do if a coworker seems to be struggling with their mental health?",
+      "sample.output_text": "Noticing a coworker struggling with their mental health can be concerning, and you\u2019re right to want to support them. Here are some supportive steps you can take:\n\n**1. Approach With Empathy and Respect:**  \nIf you feel comfortable, gently reach out to your coworker privately. Express your concern without making assumptions (e.g., \"I've noticed you seem a bit down lately\u2014I'm here if you want to talk\").\n\n**2. Listen Without Judgement:**  \nSometimes, just providing a non-judgmental, listening ear can make a big difference. Allow them to share as much or as little as they're comfortable with.\n\n**3. Encourage Professional Resources:**  \nLet them know about the available Employee Assistance Program (EAP), which provides confidential counseling and support services. You can say: \"Our company has an Employee Assistance Program\u2014if you ever want to talk to someone professionally, they\u2019re available to help.\"\n\n**4. Maintain Confidentiality:**  \nRespect their privacy. Don't share their situation with others unless there's an immediate safety concern.\n\n**5. Know When to Seek Further Help:**  \nIf your coworker talks about self-harm, suicidal thoughts, or presents a threat to themselves or others, it\u2019s important to act immediately. Notify your human resources department or a manager and encourage reaching out to a professional, such as the EAP or a mental health provider.\n\n**6. Support Ongoing:**  \nContinue to be kind and inclusive. Sometimes just knowing someone cares can help your coworker feel less isolated.\n\n**Resources:**  \n- Suggest they use your company\u2019s EAP for counseling or referrals.  \n- Encourage professional help through their healthcare provider if needed.\n\n**Caring for Yourself:**  \nSupporting someone else can be emotionally taxing. Be mindful of your own wellbeing, too, and consider reaching out for support if you need it.\n\nIf you ever feel unsure, reach out to your HR team or an EAP counselor for guidance on how to approach the situation.\n\nWould you like more information on how to contact your EAP or resources you can share?",
+      "response_id": "resp_ae35f352ad01c35b0069b9d036173081909195e684f51ec91b",
+      "agent_id": "employee-wellness-advisor:1",
+      "agent_name": "employee-wellness-advisor",
+      "agent_version": "1",
+      "conversation_id": "conv_ae35f352ad01c35b008HHQApLS4LMWUaD2ifo4uHmwfvFs8G1m",
+      "previous_response_id": null,
+      "sample.tool_calls": [],
+      "sample.tool_definitions": [],
+      "sample.output_items": [
+        {
+          "role": "system",
+          "content": "You are an employee wellness advisor. Provide guidance on work-life balance, stress management, ergonomic setups, and available employee assistance programs. Be supportive and always recommend professional resources for health concerns."
+        },
+        {
+          "role": "assistant",
+          "content": [
+            {
+              "annotations": [],
+              "text": "Noticing a coworker struggling with their mental health can be concerning, and you\u2019re right to want to support them. Here are some supportive steps you can take:\n\n**1. Approach With Empathy and Respect:**  \nIf you feel comfortable, gently reach out to your coworker privately. Express your concern without making assumptions (e.g., \"I've noticed you seem a bit down lately\u2014I'm here if you want to talk\").\n\n**2. Listen Without Judgement:**  \nSometimes, just providing a non-judgmental, listening ear can make a big difference. Allow them to share as much or as little as they're comfortable with.\n\n**3. Encourage Professional Resources:**  \nLet them know about the available Employee Assistance Program (EAP), which provides confidential counseling and support services. You can say: \"Our company has an Employee Assistance Program\u2014if you ever want to talk to someone professionally, they\u2019re available to help.\"\n\n**4. Maintain Confidentiality:**  \nRespect their privacy. Don't share their situation with others unless there's an immediate safety concern.\n\n**5. Know When to Seek Further Help:**  \nIf your coworker talks about self-harm, suicidal thoughts, or presents a threat to themselves or others, it\u2019s important to act immediately. Notify your human resources department or a manager and encourage reaching out to a professional, such as the EAP or a mental health provider.\n\n**6. Support Ongoing:**  \nContinue to be kind and inclusive. Sometimes just knowing someone cares can help your coworker feel less isolated.\n\n**Resources:**  \n- Suggest they use your company\u2019s EAP for counseling or referrals.  \n- Encourage professional help through their healthcare provider if needed.\n\n**Caring for Yourself:**  \nSupporting someone else can be emotionally taxing. Be mindful of your own wellbeing, too, and consider reaching out for support if you need it.\n\nIf you ever feel unsure, reach out to your HR team or an EAP counselor for guidance on how to approach the situation.\n\nWould you like more information on how to contact your EAP or resources you can share?",
+              "type": "output_text",
+              "logprobs": []
+            }
+          ]
+        }
+      ],
+      "sample.output_status": {
+        "status": "success",
+        "message": ""
+      },
+      "sample.output_status.status": "success",
+      "sample.output_status.message": ""
+    },
+    "datasource_item_id": 9,
+    "eval_id": "eval_0191d3c57a8a4d00922f73ccda245bc0",
+    "object": "eval.run.output_item",
+    "results": [
+      {
+        "name": "Task Adherence",
+        "passed": true,
+        "score": 1.0,
+        "sample": {
+          "usage": {
+            "prompt_tokens": 1739,
+            "completion_tokens": 146,
+            "total_tokens": 1885
+          },
+          "finish_reason": "stop",
+          "model": "gpt-4.1-2025-04-14",
+          "input": [
+            {
+              "role": "user",
+              "content": "{\"system_message\": \"\", \"query\": \"What should I do if a coworker seems to be struggling with their mental health?\", \"response\": \"Noticing a coworker struggling with their mental health can be concerning, and you\\u2019re right to want to support them. Here are some supportive steps you can take:\\n\\n**1. Approach With Empathy and Respect:**  \\nIf you feel comfortable, gently reach out to your coworker privately. Express your concern without making assumptions (e.g., \\\"I've noticed you seem a bit down lately\\u2014I'm here if you want to talk\\\").\\n\\n**2. Listen Without Judgement:**  \\nSometimes, just providing a non-judgmental, listening ear can make a big difference. Allow them to share as much or as little as they're comfortable with.\\n\\n**3. Encourage Professional Resources:**  \\nLet them know about the available Employee Assistance Program (EAP), which provides confidential counseling and support services. You can say: \\\"Our company has an Employee Assistance Program\\u2014if you ever want to talk to someone professionally, they\\u2019re available to help.\\\"\\n\\n**4. Maintain Confidentiality:**  \\nRespect their privacy. Don't share their situation with others unless there's an immediate safety concern.\\n\\n**5. Know When to Seek Further Help:**  \\nIf your coworker talks about self-harm, suicidal thoughts, or presents a threat to themselves or others, it\\u2019s important to act immediately. Notify your human resources department or a manager and encourage reaching out to a professional, such as the EAP or a mental health provider.\\n\\n**6. Support Ongoing:**  \\nContinue to be kind and inclusive. Sometimes just knowing someone cares can help your coworker feel less isolated.\\n\\n**Resources:**  \\n- Suggest they use your company\\u2019s EAP for counseling or referrals.  \\n- Encourage professional help through their healthcare provider if needed.\\n\\n**Caring for Yourself:**  \\nSupporting someone else can be emotionally taxing. Be mindful of your own wellbeing, too, and consider reaching out for support if you need it.\\n\\nIf you ever feel unsure, reach out to your HR team or an EAP counselor for guidance on how to approach the situation.\\n\\nWould you like more information on how to contact your EAP or resources you can share?\", \"tool_calls\": \"\"}"
+            }
+          ],
+          "output": [
+            {
+              "role": "assistant",
+              "content": "{\n  \"reasoning\": \"The assistant comprehensively addressed the user's query about what to do if a coworker seems to be struggling with their mental health. The response provided clear, actionable steps: approaching with empathy, listening without judgment, sharing confidential resources, encouraging the use of the Employee Assistance Program (EAP), maintaining confidentiality, escalating if there are immediate safety concerns, and suggesting ongoing support. It also included guidance on self-care for the user. There are no material omissions, risky external actions, or violations of privacy or other rules. No required workflow or tool usage was described or needed. The answer aligns fully with the user's intent and is safe, respectful, and practical.\",\n  \"flagged\": false\n}"
+            }
+          ]
+        },
+        "type": "azure_ai_evaluator",
+        "metric": "task_adherence",
+        "label": "pass",
+        "reason": "The assistant comprehensively addressed the user's query about what to do if a coworker seems to be struggling with their mental health. The response provided clear, actionable steps: approaching with empathy, listening without judgment, sharing confidential resources, encouraging the use of the Employee Assistance Program (EAP), maintaining confidentiality, escalating if there are immediate safety concerns, and suggesting ongoing support. It also included guidance on self-care for the user. There are no material omissions, risky external actions, or violations of privacy or other rules. No required workflow or tool usage was described or needed. The answer aligns fully with the user's intent and is safe, respectful, and practical.",
+        "threshold": 0
+      },
+      {
+        "name": "Intent Resolution",
+        "passed": true,
+        "score": 5.0,
+        "sample": {
+          "usage": {
+            "prompt_tokens": 2311,
+            "completion_tokens": 64,
+            "total_tokens": 2375
+          },
+          "finish_reason": "stop",
+          "model": "gpt-4.1-2025-04-14",
+          "input": [
+            {
+              "role": "user",
+              "content": "{\"query\": \"What should I do if a coworker seems to be struggling with their mental health?\", \"response\": \"Noticing a coworker struggling with their mental health can be concerning, and you\\u2019re right to want to support them. Here are some supportive steps you can take:\\n\\n**1. Approach With Empathy and Respect:**  \\nIf you feel comfortable, gently reach out to your coworker privately. Express your concern without making assumptions (e.g., \\\"I've noticed you seem a bit down lately\\u2014I'm here if you want to talk\\\").\\n\\n**2. Listen Without Judgement:**  \\nSometimes, just providing a non-judgmental, listening ear can make a big difference. Allow them to share as much or as little as they're comfortable with.\\n\\n**3. Encourage Professional Resources:**  \\nLet them know about the available Employee Assistance Program (EAP), which provides confidential counseling and support services. You can say: \\\"Our company has an Employee Assistance Program\\u2014if you ever want to talk to someone professionally, they\\u2019re available to help.\\\"\\n\\n**4. Maintain Confidentiality:**  \\nRespect their privacy. Don't share their situation with others unless there's an immediate safety concern.\\n\\n**5. Know When to Seek Further Help:**  \\nIf your coworker talks about self-harm, suicidal thoughts, or presents a threat to themselves or others, it\\u2019s important to act immediately. Notify your human resources department or a manager and encourage reaching out to a professional, such as the EAP or a mental health provider.\\n\\n**6. Support Ongoing:**  \\nContinue to be kind and inclusive. Sometimes just knowing someone cares can help your coworker feel less isolated.\\n\\n**Resources:**  \\n- Suggest they use your company\\u2019s EAP for counseling or referrals.  \\n- Encourage professional help through their healthcare provider if needed.\\n\\n**Caring for Yourself:**  \\nSupporting someone else can be emotionally taxing. Be mindful of your own wellbeing, too, and consider reaching out for support if you need it.\\n\\nIf you ever feel unsure, reach out to your HR team or an EAP counselor for guidance on how to approach the situation.\\n\\nWould you like more information on how to contact your EAP or resources you can share?\", \"tool_definitions\": null}"
+            }
+          ],
+          "output": [
+            {
+              "role": "assistant",
+              "content": "{\n  \"explanation\": \"The user wanted guidance on supporting a coworker struggling with mental health. The agent provided a thorough, step-by-step response covering empathy, listening, confidentiality, professional resources, and self-care, fully resolving the intent with relevant and actionable advice.\",\n  \"score\": 5\n}"
+            }
+          ]
+        },
+        "type": "azure_ai_evaluator",
+        "metric": "intent_resolution",
+        "label": "pass",
+        "reason": "The user wanted guidance on supporting a coworker struggling with mental health. The agent provided a thorough, step-by-step response covering empathy, listening, confidentiality, professional resources, and self-care, fully resolving the intent with relevant and actionable advice.",
+        "threshold": 3
+      }
+    ],
+    "run_id": "evalrun_c4999a4012f146c48d09bbbe8cee1b5e",
+    "sample": {
+      "error": null,
+      "finish_reason": "stop",
+      "input": [
+        {
+          "content": "{\"query\": \"What should I do if a coworker seems to be struggling with their mental health?\", \"response\": \"Noticing a coworker struggling with their mental health can be concerning, and you\\u2019re right to want to support them. Here are some supportive steps you can take:\\n\\n**1. Approach With Empathy and Respect:**  \\nIf you feel comfortable, gently reach out to your coworker privately. Express your concern without making assumptions (e.g., \\\"I've noticed you seem a bit down lately\\u2014I'm here if you want to talk\\\").\\n\\n**2. Listen Without Judgement:**  \\nSometimes, just providing a non-judgmental, listening ear can make a big difference. Allow them to share as much or as little as they're comfortable with.\\n\\n**3. Encourage Professional Resources:**  \\nLet them know about the available Employee Assistance Program (EAP), which provides confidential counseling and support services. You can say: \\\"Our company has an Employee Assistance Program\\u2014if you ever want to talk to someone professionally, they\\u2019re available to help.\\\"\\n\\n**4. Maintain Confidentiality:**  \\nRespect their privacy. Don't share their situation with others unless there's an immediate safety concern.\\n\\n**5. Know When to Seek Further Help:**  \\nIf your coworker talks about self-harm, suicidal thoughts, or presents a threat to themselves or others, it\\u2019s important to act immediately. Notify your human resources department or a manager and encourage reaching out to a professional, such as the EAP or a mental health provider.\\n\\n**6. Support Ongoing:**  \\nContinue to be kind and inclusive. Sometimes just knowing someone cares can help your coworker feel less isolated.\\n\\n**Resources:**  \\n- Suggest they use your company\\u2019s EAP for counseling or referrals.  \\n- Encourage professional help through their healthcare provider if needed.\\n\\n**Caring for Yourself:**  \\nSupporting someone else can be emotionally taxing. Be mindful of your own wellbeing, too, and consider reaching out for support if you need it.\\n\\nIf you ever feel unsure, reach out to your HR team or an EAP counselor for guidance on how to approach the situation.\\n\\nWould you like more information on how to contact your EAP or resources you can share?\", \"tool_definitions\": null}",
+          "role": "user"
+        }
+      ],
+      "max_completion_tokens": null,
+      "model": "gpt-4.1-2025-04-14",
+      "output": [
+        {
+          "content": "{\n  \"explanation\": \"The user wanted guidance on supporting a coworker struggling with mental health. The agent provided a thorough, step-by-step response covering empathy, listening, confidentiality, professional resources, and self-care, fully resolving the intent with relevant and actionable advice.\",\n  \"score\": 5\n}",
+          "role": "assistant"
+        }
+      ],
+      "seed": null,
+      "temperature": null,
+      "top_p": null,
+      "usage": {
+        "cached_tokens": null,
+        "completion_tokens": 64,
+        "prompt_tokens": 2311,
+        "total_tokens": 2375
+      }
+    },
+    "status": "completed"
+  }
+]
