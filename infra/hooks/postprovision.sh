@@ -39,14 +39,10 @@ echo "Created .env file"
 
 # Create indexes and upload data
 echo "Creating search indexes and uploading data..."
-if [ -f "infra/deploy-yourself/create-indexes.py" ]; then
-    python3 -m pip install -r notebooks/requirements.txt --quiet 2>/dev/null
-    python3 infra/deploy-yourself/create-indexes.py
+if [ -f "scripts/create-indexes.py" ]; then
+    python3 -m pip install -r scripts/requirements.txt --quiet 2>/dev/null
+    python3 scripts/create-indexes.py
     echo "Indexes created and data uploaded"
-elif [ -f "infra/create-knowledge.py" ]; then
-    python3 -m pip install -r notebooks/requirements.txt --quiet 2>/dev/null
-    python3 infra/create-knowledge.py
-    echo "Knowledge base setup complete"
 else
     echo "No index creation script found, skipping data upload"
 fi

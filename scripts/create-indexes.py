@@ -19,7 +19,7 @@ load_dotenv(override=True)
 
 # Get script directory and repo root
 script_dir = Path(__file__).parent
-repo_root = script_dir.parent.parent
+repo_root = script_dir.parent
 
 # Azure AI Search configuration
 endpoint = os.environ.get("AZURE_SEARCH_SERVICE_ENDPOINT")

@@ -41,17 +41,12 @@ Write-Host "Created .env file"
 
 # Create indexes and upload data
 Write-Host "Creating search indexes and uploading data..."
-$createIndexesPath = Join-Path $PWD "infra\deploy-yourself\create-indexes.py"
-$createKnowledgePath = Join-Path $PWD "infra\create-knowledge.py"
+$createIndexesPath = Join-Path $PWD "scripts\create-indexes.py"
 
 if (Test-Path $createIndexesPath) {
-    python -m pip install -r notebooks\requirements.txt --quiet 2>$null
+    python -m pip install -r scripts\requirements.txt --quiet 2>$null
     python $createIndexesPath
     Write-Host "Indexes created and data uploaded"
-} elseif (Test-Path $createKnowledgePath) {
-    python -m pip install -r notebooks\requirements.txt --quiet 2>$null
-    python $createKnowledgePath
-    Write-Host "Knowledge base setup complete"
 } else {
     Write-Host "No index creation script found, skipping data upload"
 }

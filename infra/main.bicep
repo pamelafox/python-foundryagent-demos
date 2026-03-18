@@ -224,7 +224,7 @@ resource microsoftFoundryProjectSearchIndexReaderRoleAssignment 'Microsoft.Autho
 // Azure AI User role for the Foundry project's own managed identity on itself.
 // Required by the Portal/runtime so the project MI can invoke its own agents and models.
 resource microsoftFoundryProjectMIAIUserRoleAssignment 'Microsoft.Authorization/roleAssignments@2022-04-01' = {
-  name: guid(microsoftFoundryProject.id, 'Azure AI User', microsoftFoundryProject.identity.principalId)
+  name: guid(microsoftFoundryProject.id, 'Azure AI User', microsoftFoundryProject.name)
   scope: microsoftFoundryProject
   properties: {
     principalId: microsoftFoundryProject.identity.principalId
@@ -249,7 +249,7 @@ resource embeddingModelDeployment 'Microsoft.CognitiveServices/accounts/deployme
     }
   }
   sku: {
-    name: 'Standard'
+    name: 'GlobalStandard'
     capacity: embeddingModelCapacity
   }
 }
@@ -266,7 +266,7 @@ resource llmModelDeployment 'Microsoft.CognitiveServices/accounts/deployments@20
     }
   }
   sku: {
-    name: 'Standard'
+    name: 'GlobalStandard'
     capacity: llmModelCapacity
   }
   dependsOn: [
