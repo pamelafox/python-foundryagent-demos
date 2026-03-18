@@ -11,7 +11,7 @@ This repository demonstrates how to build, evaluate, and load-test AI agents usi
 - **Git** (to clone this repository)
 - **VS Code** or **GitHub Codespaces** with Jupyter extension (recommended)
 
-### Required Azure Permissions
+### Required Azure permissions
 
 You'll need permissions to:
 
@@ -23,7 +23,7 @@ You'll need permissions to:
   - Azure OpenAI model deployments
 - Assign Azure RBAC roles
 
-## Quick Start
+## Quickstart
 
 ### 1. Clone the Repository
 
@@ -52,7 +52,7 @@ This will:
 - Fetch API keys and write a `.env` file
 - Create search indexes and upload sample data
 
-### 4. Run the Scripts
+### 4. Run the scripts
 
 Install the Python dependencies and run any of the scripts in the `scripts/` folder:
 
@@ -61,7 +61,7 @@ pip install -r scripts/requirements.txt
 python scripts/create_foundry_agent.py
 ```
 
-## Repository Structure
+## Repository structure
 
 ### `scripts/`
 
@@ -74,14 +74,6 @@ python scripts/create_foundry_agent.py
 | `create-indexes.py` | Standalone script to manually create Azure AI Search indexes and upload sample data (alternative to the `azd` post-provision hook). |
 | `locustfile.py` | Locust load test that sends random prompts to all created Foundry agents, useful for stress-testing agent throughput and latency. |
 | `requirements.txt` | Python dependencies for all scripts. |
-
-#### `scripts/eval_output/`
-
-Contains output from quality evaluations and the test query dataset (`test_queries.jsonl`).
-
-#### `scripts/red_team_output/`
-
-Contains output from red team scans for each agent.
 
 ### `data/`
 
