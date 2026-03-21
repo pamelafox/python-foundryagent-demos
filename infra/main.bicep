@@ -47,6 +47,8 @@ var resourceNames = {
   microsoftFoundryProject: 'foundry-project-${uniqueSuffix}'
   embeddingDeployment: 'text-embedding-3-large'
   llmDeployment: 'gpt-4.1'
+  logAnalyticsWorkspace: 'log-${uniqueSuffix}'
+  applicationInsights: 'appi-${uniqueSuffix}'
 }
 
 // ===============================================
@@ -318,6 +320,44 @@ resource userMicrosoftFoundryProjectManagerRoleAssignment 'Microsoft.Authorizati
   }
 }
 
+// ===============================================
+// APPLICATION INSIGHTS + LOG ANALYTICS
+// ===============================================
+
+module logAnalyticsWorkspace 'br/public:avm/res/operational-insights/workspace:0.15.0' = {
+  name: 'logAnalyticsWorkspaceDeploy'
+  params: {
+    name: resourceNames.logAnalyticsWorkspace
+    location: location
+  }
+}
+
+module applicationInsights 'br/public:avm/res/insights/component:0.7.1' = {
+  name: 'applicationInsightsDeploy'
+  params: {
+    name: resourceNames.applicationInsights
+    location: location
+    workspaceResourceId: logAnalyticsWorkspace.outputs.resourceId
+  }
+}
+
+resource appInsightsConnection 'Microsoft.CognitiveServices/accounts/projects/connections@2025-04-01-preview' = {
+  parent: microsoftFoundryProject
+  name: 'appinsights-connection'
+  properties: {
+    category: 'AppInsights'
+    target: applicationInsights.outputs.connectionString
+    authType: 'ApiKey'
+    isSharedToAll: true
+    metadata: {
+      ResourceId: applicationInsights.outputs.resourceId
+    }
+    credentials: {
+      key: applicationInsights.outputs.instrumentationKey
+    }
+  }
+}
+
 @description('Microsoft Foundry project endpoint in SDK format')
 output MICROSOFT_FOUNDRY_PROJECT_ENDPOINT string = 'https://${microsoftFoundryAccount.name}.services.ai.azure.com/api/projects/${microsoftFoundryProject.name}'
 
@@ -341,3 +381,6 @@ output AZURE_OPENAI_EMBEDDING_DEPLOYMENT string = embeddingModelDeployment.name
 
 @description('Chat model deployment name')
 output AZURE_OPENAI_CHATGPT_DEPLOYMENT string = llmModelDeployment.name
+
+@description('Application Insights connection string for tracing')
+output APPLICATIONINSIGHTS_CONNECTION_STRING string = applicationInsights.outputs.connectionString

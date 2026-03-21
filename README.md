@@ -23,42 +23,66 @@ You'll need permissions to:
   - Azure OpenAI model deployments
 - Assign Azure RBAC roles
 
-## Quickstart
+## Getting started
 
-### 1. Clone the Repository
+### Clone the repository
 
 ```bash
 git clone https://github.com/pamelafox/python-foundryagent-demos.git
 cd python-foundryagent-demos
 ```
 
-### 2. Create a Python virtual environment
+### Create a Python virtual environment
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-### 3. Deploy with azd
-
-```bash
-azd auth login
-azd up
-```
-
-This will:
-
-- Provision all Azure resources
-- Fetch API keys and write a `.env` file
-- Create search indexes and upload sample data
-
-### 4. Run the scripts
-
-Install the Python dependencies and run any of the scripts in the `scripts/` folder:
+### Install dependencies
 
 ```bash
 pip install -r scripts/requirements.txt
+```
+
+### Deploy with the Azure Developer CLI
+
+1. Login to Azure:
+
+    ```bash
+    azd auth login
+    ```
+
+2. Run the deployment:
+
+    ```bash
+    azd up
+    ```
+
+    This will:
+
+    - Provision all Azure/Foundry resources
+    - Write a `.env` file
+    - Create search indexes and upload sample data
+
+### 4. Create Foundry agents
+
+Create 20 different Foundry prompt agents with various enterprise personas:
+
+```bash
 python scripts/create_foundry_agents.py
+```
+
+Create a Foundry agent grounded in Foundry IQ (Azure AI Search knowledge bases):
+
+```bash
+python scripts/create_kb_agent.py
+```
+
+Setup continuous evaluation for the Foundry IQ agent:
+
+```bash
+python scripts/setup_continuous_eval.py
 ```
 
 ## Repository structure
