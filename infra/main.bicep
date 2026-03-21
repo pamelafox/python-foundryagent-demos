@@ -1,13 +1,9 @@
 // ===============================================
-// Bicep template for LAB006
 // Creates: Azure AI Search, Microsoft Foundry (with model deployments)
 // ===============================================
 
 @description('Principal ID for role assignments (provided by azd)')
 param principalId string
-
-@description('The name prefix for all resources')
-param resourcePrefix string = 'lab006'
 
 @description('The location where all resources will be deployed')
 param location string
@@ -39,15 +35,16 @@ param llmModelVersion string = '2025-04-14'
 @maxValue(200)
 param llmModelCapacity int = 50
 
+@description('Bump this value if role assignment deployment fails due to stale ARM tombstones')
+param roleAssignmentSuffix string = 'v2'
 
 
 // Variables for resource naming and configuration
 var uniqueSuffix = uniqueString(resourceGroup().id)
 var resourceNames = {
-  searchService: '${resourcePrefix}-search-${uniqueSuffix}'
-  searchIndex: '${resourcePrefix}-index'
-  microsoftFoundry: '${resourcePrefix}-foundry-${uniqueSuffix}'
-  microsoftFoundryProject: '${resourcePrefix}-project-${uniqueSuffix}'
+  searchService: 'search-${uniqueSuffix}'
+  microsoftFoundry: 'foundry-${uniqueSuffix}'
+  microsoftFoundryProject: 'foundry-project-${uniqueSuffix}'
   embeddingDeployment: 'text-embedding-3-large'
   llmDeployment: 'gpt-4.1'
 }
@@ -93,7 +90,7 @@ resource searchService 'Microsoft.Search/searchServices@2023-11-01' = {
 
 // Search Index Data Contributor role for SP
 resource SPuserSearchIndexContributorRoleAssignment 'Microsoft.Authorization/roleAssignments@2022-04-01' = {
-  name: guid(uniqueSuffix, 'sp-data-reader') 
+  name: guid(uniqueSuffix, 'sp-data-reader', roleAssignmentSuffix) 
   scope: searchService
   properties: {
     principalId: searchService.identity.principalId
@@ -102,9 +99,10 @@ resource SPuserSearchIndexContributorRoleAssignment 'Microsoft.Authorization/rol
   }
 }
 
-// Cognitive Services OpenAI User role for AI Search MI (subscription scope)
+// Cognitive Services OpenAI User role for AI Search MI on Foundry account
 resource searchServiceToOpenAIRoleAssignment 'Microsoft.Authorization/roleAssignments@2022-04-01' = {
-  name: guid(subscription().id, searchService.name, '5e0bd9bd-7b93-4f28-af87-19fc36ad61bd')
+  name: guid(microsoftFoundryAccount.id, searchService.name, '5e0bd9bd-7b93-4f28-af87-19fc36ad61bd', roleAssignmentSuffix)
+  scope: microsoftFoundryAccount
   properties: {
     principalId: searchService.identity.principalId
     principalType: 'ServicePrincipal'
@@ -112,9 +110,10 @@ resource searchServiceToOpenAIRoleAssignment 'Microsoft.Authorization/roleAssign
   }
 }
 
-// Azure AI User role for AI Search MI (subscription scope)
+// Azure AI User role for AI Search MI on Foundry account
 resource searchServiceToAIUserRoleAssignment 'Microsoft.Authorization/roleAssignments@2022-04-01' = {
-  name: guid(subscription().id, searchService.name, '53ca6127-db72-4b80-b1b0-d745d6d5456d')
+  name: guid(microsoftFoundryAccount.id, searchService.name, '53ca6127-db72-4b80-b1b0-d745d6d5456d', roleAssignmentSuffix)
+  scope: microsoftFoundryAccount
   properties: {
     principalId: searchService.identity.principalId
     principalType: 'ServicePrincipal'
@@ -122,9 +121,10 @@ resource searchServiceToAIUserRoleAssignment 'Microsoft.Authorization/roleAssign
   }
 }
 
-// Cognitive Services User role for AI Search MI (subscription scope)
+// Cognitive Services User role for AI Search MI on Foundry account
 resource searchServiceToCognitiveServicesUserRoleAssignment 'Microsoft.Authorization/roleAssignments@2022-04-01' = {
-  name: guid(subscription().id, searchService.name, 'a97b65f3-24c7-4388-baec-2e87135dc908')
+  name: guid(microsoftFoundryAccount.id, searchService.name, 'a97b65f3-24c7-4388-baec-2e87135dc908', roleAssignmentSuffix)
+  scope: microsoftFoundryAccount
   properties: {
     principalId: searchService.identity.principalId
     principalType: 'ServicePrincipal'
@@ -212,7 +212,7 @@ resource microsoftFoundryProject 'Microsoft.CognitiveServices/accounts/projects@
 // Search Index Data Reader role for the Foundry project managed identity.
 // This is required for KB MCP access when the project connection uses ProjectManagedIdentity.
 resource microsoftFoundryProjectSearchIndexReaderRoleAssignment 'Microsoft.Authorization/roleAssignments@2022-04-01' = {
-  name: guid(subscription().id, resourceGroup().id, searchService.name, microsoftFoundryProject.id, '1407120a-92aa-4202-b7e9-c0e197c71c8f')
+  name: guid(searchService.id, microsoftFoundryProject.id, '1407120a-92aa-4202-b7e9-c0e197c71c8f', roleAssignmentSuffix)
   scope: searchService
   properties: {
     principalId: microsoftFoundryProject.identity.principalId
@@ -224,7 +224,7 @@ resource microsoftFoundryProjectSearchIndexReaderRoleAssignment 'Microsoft.Autho
 // Azure AI User role for the Foundry project's own managed identity on itself.
 // Required by the Portal/runtime so the project MI can invoke its own agents and models.
 resource microsoftFoundryProjectMIAIUserRoleAssignment 'Microsoft.Authorization/roleAssignments@2022-04-01' = {
-  name: guid(microsoftFoundryProject.id, 'Azure AI User', microsoftFoundryProject.name)
+  name: guid(microsoftFoundryProject.id, 'Azure AI User', microsoftFoundryProject.name, roleAssignmentSuffix)
   scope: microsoftFoundryProject
   properties: {
     principalId: microsoftFoundryProject.identity.principalId

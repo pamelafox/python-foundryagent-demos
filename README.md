@@ -58,7 +58,7 @@ Install the Python dependencies and run any of the scripts in the `scripts/` fol
 
 ```bash
 pip install -r scripts/requirements.txt
-python scripts/create_foundry_agent.py
+python scripts/create_foundry_agents.py
 ```
 
 ## Repository structure
@@ -67,7 +67,7 @@ python scripts/create_foundry_agent.py
 
 | File | Description |
 |------|-------------|
-| `create_foundry_agent.py` | Creates 20 Foundry agents with different enterprise personas (HR advisor, IT helpdesk, budget analyst, etc.) using the Azure AI Projects SDK. |
+| `create_foundry_agents.py` | Creates 20 Foundry agents with different enterprise personas (HR advisor, IT helpdesk, budget analyst, etc.) using the Azure AI Projects SDK. |
 | `create_kb_agent.py` | Creates a knowledge-base-grounded wellness advisor agent that uses Azure AI Search indexes (healthdocs/hrdocs) as its sole knowledge source via an MCP tool. |
 | `quality_eval.py` | Runs a quality evaluation against the KB-only wellness advisor agent, testing both in-scope and out-of-scope queries with evaluators for task adherence, intent resolution, and groundedness. |
 | `red_team_scan.py` | Runs an AI red teaming scan against the wellness advisor agent, testing for safety risks (self-harm, sexual content, violence, sensitive data leakage) using attack strategies and custom taxonomies. |
