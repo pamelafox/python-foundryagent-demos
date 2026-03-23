@@ -85,6 +85,18 @@ Setup continuous evaluation for the Foundry IQ agent:
 python scripts/setup_continuous_eval.py
 ```
 
+Setup a daily scheduled quality evaluation (runs at 9 AM UTC):
+
+```bash
+python scripts/scheduled_eval.py
+```
+
+Setup a daily scheduled red-teaming run (runs at 9 AM UTC):
+
+```bash
+python scripts/scheduled_red_team.py
+```
+
 ## Repository structure
 
 ### `scripts/`
@@ -93,7 +105,9 @@ python scripts/setup_continuous_eval.py
 |------|-------------|
 | `create_foundry_agents.py` | Creates 20 Foundry agents with different enterprise personas (HR advisor, IT helpdesk, budget analyst, etc.) using the Azure AI Projects SDK. |
 | `create_kb_agent.py` | Creates a knowledge-base-grounded wellness advisor agent that uses Azure AI Search indexes (healthdocs/hrdocs) as its sole knowledge source via an MCP tool. |
-| `quality_eval.py` | Runs a quality evaluation against the KB-only wellness advisor agent, testing both in-scope and out-of-scope queries with evaluators for task adherence, intent resolution, and groundedness. |
+| `quality_eval.py` | Runs a one-off quality evaluation against the KB-only wellness advisor agent, testing both in-scope and out-of-scope queries with evaluators for task adherence, intent resolution, and groundedness. |
+| `scheduled_eval.py` | Creates a daily scheduled quality evaluation (9 AM UTC) for the KB-only wellness advisor agent using the same evaluators as `quality_eval.py`. |
+| `scheduled_red_team.py` | Creates a daily scheduled red-teaming run (9 AM UTC) for the KB-only wellness advisor agent with safety evaluators and attack strategies. |
 | `red_team_scan.py` | Runs an AI red teaming scan against the wellness advisor agent, testing for safety risks (self-harm, sexual content, violence, sensitive data leakage) using attack strategies and custom taxonomies. |
 | `create-indexes.py` | Standalone script to manually create Azure AI Search indexes and upload sample data (alternative to the `azd` post-provision hook). |
 | `locustfile.py` | Locust load test that sends random prompts to all created Foundry agents, useful for stress-testing agent throughput and latency. |
